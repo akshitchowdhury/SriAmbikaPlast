@@ -7,10 +7,10 @@ const Contact = () => {
       {/* Left section */}
       <div className="left w-full md:w-1/2 p-6 md:p-10 rounded-md bg-purple-700 bg-opacity-50"
            style={{ backgroundBlendMode: 'multiply', backgroundSize: 'cover', backgroundPosition: 'center' }}>
-        <p className="text-lg md:text-3xl text-left text-white font-medium my-6 md:my-10">
+        <p className="text-lg md:text-3xl md:absolute md:bottom-44  text-left text-white font-medium my-6 ">
           We are pleased to keep in touch with you
         </p>
-        <p className="text-sm md:text-base text-left text-white font-thin mb-6 md:mb-10">
+        <p className="text-sm md:text-base md:my-[70%] text-left text-white font-thin mb-6 md:mb-10">
           Contact us for further details, we are always happy to guide our customers for future investments and services.
         </p>
       </div>
