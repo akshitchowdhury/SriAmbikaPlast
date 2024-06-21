@@ -1,5 +1,5 @@
 import React from "react";
-import v1 from "../../assets/vision.jpg";
+import v1 from "../../assets/vision.png";
 import v2 from "../../assets/innovativeProducts.jpg";
 import v3 from "../../assets/customerSatisfaction.png";
 
