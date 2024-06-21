@@ -16,7 +16,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="footer bg-orange-400 text-white">
+    <footer className="footer bg-orange-600 text-white">
       <div className="footerBlock1 mx-auto w-full max-w-screen-xl py-12">
         <div className="grid grid-cols-2 gap-8 px-4 lg:grid-cols-4">
           <div className="md:col-span-1">

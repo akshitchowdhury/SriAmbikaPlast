@@ -2,6 +2,6 @@
     height: 70vh; /* Adjust height as needed */
     background-image: url('../../assets/aboutBg.png');
     background-size: cover;
-    background-position: center;
+    background-position: top;
     background-attachment: fixed;
 }
