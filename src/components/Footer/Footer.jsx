@@ -20,16 +20,17 @@ const Footer = () => {
       <div className="footerBlock1 mx-auto w-full max-w-screen-xl py-12">
         <div className="grid grid-cols-2 gap-8 px-4 lg:grid-cols-4">
           <div className="md:col-span-1">
-            <QuickLinks />
+          <AdressBlock />
+            
+          </div>
+          <div className="md:col-span-1">
+          <QuickLinks />
           </div>
           <div className="md:col-span-1">
             <WhatWeDo />
           </div>
           <div className="md:col-span-1">
-            <ImportantLinks />
-          </div>
-          <div className="md:col-span-1">
-            <AdressBlock />
+          <ImportantLinks />
           </div>
         </div>
       </div>
