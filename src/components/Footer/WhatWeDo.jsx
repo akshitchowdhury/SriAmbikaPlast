@@ -14,8 +14,8 @@ const WhatWeDo = () => {
   }
   return (
     <div>
-      <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Products</h2>
-  <ul className="miniServices text-gray-500 dark:text-gray-400 font-medium">
+      <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white text-left">Products</h2>
+  <ul className="miniServices text-gray-500 dark:text-gray-400 font-medium text-left">
   <Link to ="/webdesign" onClick={()=> handleClick(webDesRef)}>
     <li className="mb-4">
       Suction Hose

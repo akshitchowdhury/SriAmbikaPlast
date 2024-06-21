@@ -13,8 +13,8 @@ const ImportantLinks = () => {
   }
   return (
     <div>
-      <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Important Links</h2>
-  <ul className="miniServices text-gray-500 dark:text-gray-400 font-medium">
+      <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white text-left">Important Links</h2>
+  <ul className="miniServices text-gray-500 dark:text-gray-400 font-medium text-left">
     <li className="mb-4">
     <Link onClick={()=> handleClick(privacyRef)} to="/privacy">
     Privacy Policy

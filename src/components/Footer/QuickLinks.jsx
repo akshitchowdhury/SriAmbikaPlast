@@ -12,8 +12,8 @@ const QuickLinks = () => {
       };
   return (
     <div>
-      <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Quick Links</h2>
-            <ul className="Qlinks text-sm md:text-base text-gray-500 dark:text-gray-400 font-medium">
+      <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white text-left">Quick Links</h2>
+            <ul className="Qlinks text-sm md:text-base text-gray-500 dark:text-gray-400 font-medium text-left">
               <li className="mb-4  ">
                 <Link to="/" onClick={() => handleClick(homeRef)} className="navbar-links">Home</Link>
               </li>
@@ -27,7 +27,7 @@ const QuickLinks = () => {
                 <Link to="/portfolio" onClick={() => handleClick(portfolioRef)} className="navbar-links">Portfolio</Link>
               </li> */}
               <li className="mb-4">
-                <Link to="/career" onClick={() => handleClick(careerRef)} className="navbar-links">Career</Link>
+                <Link to="/career" onClick={() => handleClick(careerRef)} className="navbar-links">Products</Link>
               </li>
               <li className="mb-4">
                 <Link to="/contact" onClick={() => handleClick(contactRef)} className="navbar-links">Contact Me</Link>

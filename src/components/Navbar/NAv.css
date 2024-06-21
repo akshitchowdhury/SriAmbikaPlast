@@ -1,0 +1,18 @@
+.navLinks{
+    transition: transform 0.3s ease;
+}
+
+.navLinks:hover{
+    transform: scale(1.2);
+}
+
+.services{
+    transition: transform 0.3s ease;
+}
+
+.serviceBlock{
+margin-top: 7%;
+}
+.serviceBlock:hover{
+    transform: none;
+}

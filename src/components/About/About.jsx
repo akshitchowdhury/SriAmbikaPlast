@@ -90,7 +90,7 @@ const About = () => {
           </div>
         </div>
 
-        <CountRise />
+        {/* <CountRise /> */}
 
         <section className="mb-12">
           <h2 className="text-2xl md:text-3xl font-semibold mb-4">
