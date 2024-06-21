@@ -6,6 +6,7 @@ import {
   Routes,
 } from "react-router-dom";
 import About from './components/About/About';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Routes>
       <Route path="/" element= {<About/>}/>
       </Routes>
+      <Footer/>
     </Router>
         </div>
   );
