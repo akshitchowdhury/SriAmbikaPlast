@@ -3,7 +3,7 @@
 
 .left {
     position: relative;
-    background-image: url("../../assets/contactLeft.jpg");
+    /* background-image: url("../../assets/contactLeft.jpg"); */
     background-size: cover;
     transition: transform 0.3s ease-in-out;
     
