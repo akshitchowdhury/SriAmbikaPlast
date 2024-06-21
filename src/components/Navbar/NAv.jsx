@@ -30,7 +30,7 @@ function NAv() {
               type="button"
               className="text-black bg-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium
                 text-sm px-6 py-3 text-center dark:bg-blue-600 dark:focus:ring-blue-800 
-               hover:bg-orange-400 hover:text-white
+               hover:bg-orange-400 hover:text-white rounded-md
                hover:transform hover:scale-105 hover:shadow-lg transition duration-300 ease-in-out"
             >
               Contact US
