@@ -1,3 +1,10 @@
+import flexSuction from '../../assets/products/flexSuction.webp'
+import superFlexSuction from '../../assets/products/superFlexSuction.webp'
+import topLonBraided from '../../assets/products/topLonBraided.webp'
+import goodLonBraided from '../../assets/products/goodLonBraided.webp'
+import colorLDpipes from '../../assets/products/colorLDpipes.webp'
+import whiteLDpipes from '../../assets/products/whiteLDpipes.avif'
+
 const productsData = [
   {
     category: "PVC Suction Hose Pipe",
@@ -5,7 +12,7 @@ const productsData = [
       {
         product: {
           ProductName: "Flex Suction",
-          image: {},
+          image: flexSuction,
           sizeWeight: [{ 
             s1: '3/4"', w1: "4.5",
             s2: '1"', w2: "5.5",
@@ -26,7 +33,7 @@ const productsData = [
       {
         product: {
           ProductName: "Super Flex Suction",
-          image: {},
+          image: superFlexSuction,
           sizeWeight: [{ 
             s1: '3/4"', w1: "5.5",
             s2: '1"', w2: "6-7",
@@ -52,7 +59,7 @@ const productsData = [
       {
         product: {
           ProductName: "Top Lon Braided",
-          image: {},
+          image: topLonBraided,
           sizeWeight: [{ s1: '1/2"', w1: "3.5",
             s2: '3/4"', w2: "5.2",
             s3: '1"', w3: "8.2",}],
@@ -63,7 +70,7 @@ const productsData = [
       {
         product: {
           ProductName: "Good Lon Braided",
-          image: {},
+          image: goodLonBraided,
           sizeWeight: [{ s1: '8MM', w1: "11", sMtr1: "100",
             s2: '10MM', w2: "14", sMtr2: "100",
             s3: '12MM', w3: "16-32",sMtr3: "50-100",
@@ -225,7 +232,7 @@ const productsData = [
       {
         product: {
           ProductName: "Color L.D. Pipes",
-          image: {},
+          image: colorLDpipes,
           sizeWeight: [{ 
             s1: '2', w1: "6", 
             s2: '2.5', w2: "8" ,
@@ -242,7 +249,7 @@ const productsData = [
       {
         product: {
           ProductName: "White Transparent",
-          image: {},
+          image: whiteLDpipes,
           sizeWeight: [{ 
             s1: '2', w1: "6", 
             s2: '2.5', w2: "8" ,
