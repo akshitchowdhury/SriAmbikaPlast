@@ -9,13 +9,14 @@ import About from './components/About/About';
 import Footer from './components/Footer/Footer';
 import NAv from './components/Navbar/NAv';
 import Contact from './components/Contact/Contact';
+import Home from './components/Home/Home';
 function App() {
   return (
     <div className="App">
     <Router>
     <NAv/>
       <Routes>
-      <Route path="/" element= {<About/>}/>
+      <Route path="/" element= {<Home/>}/>
       <Route path="/about" element= {<About/>}/>
       <Route path="/contact" element= {<Contact/>}/>
       </Routes>

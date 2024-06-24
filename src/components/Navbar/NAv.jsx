@@ -131,7 +131,8 @@ function NAv() {
             <li className="navLinks">
               <Link
                 to="/"
-                className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-white md:p-0 md:dark:text-blue-500 md:hover:text-orange-200"
+                className="block py-2 px-3 text-white
+                font-normal bg-blue-700 rounded md:bg-transparent md:text-white md:p-0 md:dark:text-blue-500 md:hover:text-orange-200"
                 aria-current="page"
               >
                 Home
@@ -140,7 +141,8 @@ function NAv() {
             <li className="navLinks">
               <Link
                 to="/about"
-                className="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 md:hover:text-orange-200 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                className="block py-2 px-
+                font-normal text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 md:hover:text-orange-200 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                 aria-current="page"
               >
                 About Us
@@ -170,7 +172,8 @@ function NAv() {
             <li className="navLinks">
               <Link
                 to="/career"
-                className="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent  md:p-0 md:hover:text-orange-200 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                className="block py-2 px-3
+                font-normal text-white rounded hover:bg-gray-100 md:hover:bg-transparent  md:p-0 md:hover:text-orange-200 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >
                 Products
               </Link>
@@ -178,7 +181,8 @@ function NAv() {
             <li className="navLinks">
               <Link
                 to="/contact"
-                className="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent  md:p-0 md:hover:text-orange-200 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                className="block py-2 px-3
+                font-normal text-white rounded hover:bg-gray-100 md:hover:bg-transparent  md:p-0 md:hover:text-orange-200 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >
                 Contact
               </Link>

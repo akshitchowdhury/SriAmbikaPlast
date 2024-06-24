@@ -20,10 +20,10 @@ const ContactForm = () => {
           </div>
           <div className="flex flex-col">
             <label htmlFor="message" className="text-white mb-2">Message</label>
-            <textarea id="message" name="message" rows="2" className="p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500" required></textarea>
+            <input type='text' name="message"  className="p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500" required/>
           </div>
           </div>
-          <button type="submit" className="p-3 rounded-md bg-white text-purple-700 font-semibold hover:bg-purple-100 focus:outline-none focus:ring-2 focus:ring-purple-500">
+          <button type="submit" className="p-3 rounded-md bg-white text-purple-700 font-semibold hover:bg-amber-400 transition ease-in-out duration-300 focus:outline-none focus:ring-2 focus:ring-purple-500">
             Submit
           </button>
         </form>
