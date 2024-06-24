@@ -1,9 +1,9 @@
-import flexSuction from '../../assets/products/flexSuction.webp'
-import superFlexSuction from '../../assets/products/superFlexSuction.webp'
-import topLonBraided from '../../assets/products/topLonBraided.webp'
-import goodLonBraided from '../../assets/products/goodLonBraided.webp'
-import colorLDpipes from '../../assets/products/colorLDpipes.webp'
-import whiteLDpipes from '../../assets/products/whiteLDpipes.avif'
+import flexSuction from '../../assets/products/flexSuction.webp';
+import superFlexSuction from '../../assets/products/superFlexSuction.webp';
+import topLonBraided from '../../assets/products/topLonBraided.webp';
+import goodLonBraided from '../../assets/products/goodLonBraided.webp';
+import colorLDpipes from '../../assets/products/colorLDpipes.webp';
+import whiteLDpipes from '../../assets/products/whiteLDpipes.avif';
 
 const productsData = [
   {
@@ -13,19 +13,18 @@ const productsData = [
         product: {
           ProductName: "Flex Suction",
           image: flexSuction,
-          sizeWeight: [{ 
-            s1: '3/4"', w1: "4.5",
-            s2: '1"', w2: "5.5",
-            s3: '1.25"', w3: "8",
-            s4: '1.50"', w4: "10",
-            s5: '2"', w5: "14-18",
-            s6: '2.50"', w6: "18-25",
-            s7: '3"', w7: "28-35",
-            s8: '4"', w8: "58-65",
-            s9: '5"', w9: "60-70",
-            s9: '6"', w9: "70-85",
-
-           }],
+          sizeWeight: [
+            { s: '3/4"', w: "4.5" },
+            { s: '1"', w: "5.5" },
+            { s: '1.25"', w: "8" },
+            { s: '1.50"', w: "10" },
+            { s: '2"', w: "14-18" },
+            { s: '2.50"', w: "18-25" },
+            { s: '3"', w: "28-35" },
+            { s: '4"', w: "58-65" },
+            { s: '5"', w: "60-70" },
+            { s: '6"', w: "70-85" }
+          ],
           colors: ["Green, Blue , Orange"],
           rollLength: "30mtr",
         },
@@ -34,19 +33,18 @@ const productsData = [
         product: {
           ProductName: "Super Flex Suction",
           image: superFlexSuction,
-          sizeWeight: [{ 
-            s1: '3/4"', w1: "5.5",
-            s2: '1"', w2: "6-7",
-            s3: '1.25"', w3: "10",
-            s4: '1.50"', w4: "12",
-            s5: '2"', w5: "16-20",
-            s6: '2.50"', w6: "24-30",
-            s7: '3"', w7: "34-40",
-            s8: '4"', w8: "70-85",
-            s9: '5"', w9: "80-90",
-            s10: '6"', w9: "85-105",
-
-           }],
+          sizeWeight: [
+            { s: '3/4"', w: "5.5" },
+            { s: '1"', w: "6-7" },
+            { s: '1.25"', w: "10" },
+            { s: '1.50"', w: "12" },
+            { s: '2"', w: "16-20" },
+            { s: '2.50"', w: "24-30" },
+            { s: '3"', w: "34-40" },
+            { s: '4"', w: "70-85" },
+            { s: '5"', w: "80-90" },
+            { s: '6"', w: "85-105" }
+          ],
           colors: ["Parrot green, Blue, Gray, White"],
           rollLength: "30mtr",
         },
@@ -60,9 +58,11 @@ const productsData = [
         product: {
           ProductName: "Top Lon Braided",
           image: topLonBraided,
-          sizeWeight: [{ s1: '1/2"', w1: "3.5",
-            s2: '3/4"', w2: "5.2",
-            s3: '1"', w3: "8.2",}],
+          sizeWeight: [
+            { s: '1/2"', w: "3.5" },
+            { s: '3/4"', w: "5.2" },
+            { s: '1"', w: "8.2" }
+          ],
           colors: ["green, yellow, orange, Parrot Green, Pink"],
           rollLength: "30mtr",
         },
@@ -71,12 +71,13 @@ const productsData = [
         product: {
           ProductName: "Good Lon Braided",
           image: goodLonBraided,
-          sizeWeight: [{ s1: '8MM', w1: "11", sMtr1: "100",
-            s2: '10MM', w2: "14", sMtr2: "100",
-            s3: '12MM', w3: "16-32",sMtr3: "50-100",
-            s4: '3/4"', w4: "5.5-14",sMtr4: "30-50",
-            s5: '1"', w5: "12-21",sMtr5: "30-50",
-        }],
+          sizeWeight: [
+            { s: '8MM', w: "11", sMtr: "100" },
+            { s: '10MM', w: "14", sMtr: "100" },
+            { s: '12MM', w: "16-32", sMtr: "50-100" },
+            { s: '3/4"', w: "5.5-14", sMtr: "30-50" },
+            { s: '1"', w: "12-21", sMtr: "30-50" }
+          ],
           //   colors: ["green", "blue", "orange"],
           rollLength: "30mtr, 50mtr, 100mtr",
         },
@@ -90,10 +91,12 @@ const productsData = [
         product: {
           ProductName: "Fifty-Fifty (50-50)",
           image: {},
-          sizeWeight: [{ s1: '1/2"', w1: "3",
-            s2: '3/4"', w2: "4.5",
-            s3: '1"', w3: "7"}],
-          colors: [ "Yellow, Orange, Parrot Green, Pink"],
+          sizeWeight: [
+            { s: '1/2"', w: "3" },
+            { s: '3/4"', w: "4.5" },
+            { s: '1"', w: "7" }
+          ],
+          colors: ["Yellow, Orange, Parrot Green, Pink"],
           rollLength: "30mtr",
         },
       },
@@ -101,11 +104,12 @@ const productsData = [
         product: {
           ProductName: "Color Transparent (C.T.T)",
           image: {},
-          sizeWeight: [{ s1: '1/2"', w1: "2.5",
-            s2: '3/4"', w2: "3.5",
-            s3: '1"', w3: "6.5"}],
-          
-          colors: [ "Yellow, Orange, Parrot Green, Pink"],
+          sizeWeight: [
+            { s: '1/2"', w: "2.5" },
+            { s: '3/4"', w: "3.5" },
+            { s: '1"', w: "6.5" }
+          ],
+          colors: ["Yellow, Orange, Parrot Green, Pink"],
           //   colors: ["green", "blue", "orange"],
           rollLength: "30mtr",
         },
@@ -114,11 +118,12 @@ const productsData = [
         product: {
           ProductName: "Color Zebra",
           image: {},
-          sizeWeight: [{ s1: '1/2"', w1: "3",
-            s2: '3/4"', w2: "4.5",
-            s3: '1"', w3: "7"}],
-          
-          colors: [ "Yellow, Orange, Parrot Green, Pink"],
+          sizeWeight: [
+            { s: '1/2"', w: "3" },
+            { s: '3/4"', w: "4.5" },
+            { s: '1"', w: "7" }
+          ],
+          colors: ["Yellow, Orange, Parrot Green, Pink"],
           //   colors: ["green", "blue", "orange"],
           rollLength: "30mtr",
         },
@@ -127,11 +132,12 @@ const productsData = [
         product: {
           ProductName: "Opek",
           image: {},
-          sizeWeight: [{ s1: '1/2"', w1: "3",
-            s2: '3/4"', w2: "4.5",
-            s3: '1"', w3: "7"}],
-          
-          colors: [ "Yellow, Orange, Parrot Green, Pink"],
+          sizeWeight: [
+            { s: '1/2"', w: "3" },
+            { s: '3/4"', w: "4.5" },
+            { s: '1"', w: "7" }
+          ],
+          colors: ["Yellow, Orange, Parrot Green, Pink"],
           //   colors: ["green", "blue", "orange"],
           rollLength: "30mtr",
         },
@@ -140,10 +146,11 @@ const productsData = [
         product: {
           ProductName: "White T.T",
           image: {},
-          sizeWeight: [{ s1: '1/2"', w1: "3",
-            s2: '3/4"', w2: "4.5",
-            s3: '1"', w3: "7.5"}],
-          
+          sizeWeight: [
+            { s: '1/2"', w: "3" },
+            { s: '3/4"', w: "4.5" },
+            { s: '1"', w: "7.5" }
+          ],
           //   colors: ["green", "blue", "orange"],
           rollLength: "30mtr",
         },
@@ -152,11 +159,12 @@ const productsData = [
         product: {
           ProductName: "Metallic",
           image: {},
-          sizeWeight: [{ s1: '1/2"', w1: "3",
-            s2: '3/4"', w2: "4.5",
-            s3: '1"', w3: "7.5"}],
-          
-          colors: [ "Yellow, Orange, Parrot Green, Pink"],
+          sizeWeight: [
+            { s: '1/2"', w: "3" },
+            { s: '3/4"', w: "4.5" },
+            { s: '1"', w: "7.5" }
+          ],
+          colors: ["Yellow, Orange, Parrot Green, Pink"],
           //   colors: ["green", "blue", "orange"],
           rollLength: "30mtr",
         },
@@ -165,11 +173,12 @@ const productsData = [
         product: {
           ProductName: "Black Zebra",
           image: {},
-          sizeWeight: [{ s1: '1/2"', w1: "3.5",
-            s2: '3/4"', w2: "5",
-            s3: '1"', w3: "8"}],
-          
-          colors: [ "Parrot Green , Yellow, Blue, White, Orange, Pink"],
+          sizeWeight: [
+            { s: '1/2"', w: "3.5" },
+            { s: '3/4"', w: "5" },
+            { s: '1"', w: "8" }
+          ],
+          colors: ["Parrot Green , Yellow, Blue, White, Orange, Pink"],
           //   colors: ["green", "blue", "orange"],
           rollLength: "30mtr",
         },
@@ -178,11 +187,12 @@ const productsData = [
         product: {
           ProductName: "Double Decker",
           image: {},
-          sizeWeight:  [{ s1: '1/2"', w1: "3.5",
-            s2: '3/4"', w2: "5",
-            s3: '1"', w3: "8"}],
-          
-          colors: [ "Parrot Green , Yellow, Blue, White, Orange, Pink"],
+          sizeWeight: [
+            { s: '1/2"', w: "3.5" },
+            { s: '3/4"', w: "5" },
+            { s: '1"', w: "8" }
+          ],
+          colors: ["Parrot Green , Yellow, Blue, White, Orange, Pink"],
           //   colors: ["green", "blue", "orange"],
           rollLength: "30mtr",
         },
@@ -191,11 +201,12 @@ const productsData = [
         product: {
           ProductName: "Super Foam",
           image: {},
-          sizeWeight:  [{ s1: '1/2"', w1: "3.5",
-            s2: '3/4"', w2: "5",
-            s3: '1"', w3: "8"}],
-          
-          colors: [ "Parrot Green , Yellow, Orange, Pink"],
+          sizeWeight: [
+            { s: '1/2"', w: "3.5" },
+            { s: '3/4"', w: "5" },
+            { s: '1"', w: "8" }
+          ],
+          colors: ["Parrot Green , Yellow, Orange, Pink"],
           //   colors: ["green", "blue", "orange"],
           rollLength: "30mtr",
         },
@@ -204,9 +215,11 @@ const productsData = [
         product: {
           ProductName: "Super 32 Line Rib",
           image: {},
-          sizeWeight:  [{ s1: '3/4"', w1: "5",
-            s2: '1"', w2: "8.5"}],
-          colors: [ "Parrot Green , Yellow, Blue, White, Orange, Pink"],
+          sizeWeight: [
+            { s: '3/4"', w: "5" },
+            { s: '1"', w: "8.5" }
+          ],
+          colors: ["Parrot Green , Yellow, Blue, White, Orange, Pink"],
           //   colors: ["green", "blue", "orange"],
           rollLength: "30mtr",
         },
@@ -215,15 +228,15 @@ const productsData = [
         product: {
           ProductName: "Level Tube",
           image: {},
-          sizeWeight: [{ s1: '6MM', w1: "700GM, 1KG",
-            s2: '8MM', w2: "1KG",
-            s3: '10MM', w3: "1.5KG"}],
-          
+          sizeWeight: [
+            { s: '6MM', w: "700GM, 1KG" },
+            { s: '8MM', w: "1KG" },
+            { s: '10MM', w: "1.5KG" }
+          ],
           //   colors: ["green", "blue", "orange"],
           rollLength: "30mtr",
         },
       },
-      
     ],
   },
   {
@@ -233,15 +246,14 @@ const productsData = [
         product: {
           ProductName: "Color L.D. Pipes",
           image: colorLDpipes,
-          sizeWeight: [{ 
-            s1: '2', w1: "6", 
-            s2: '2.5', w2: "8" ,
-            s3: '3', w3: "10" ,
-            s4: '4', w4: "18" ,
-            s5: '5', w5: "25" ,
-            s6: '6', w6: "30" ,
-
-          }],
+          sizeWeight: [
+            { s: '2"', w: "6" },
+            { s: '2.5"', w: "8" },
+            { s: '3"', w: "10" },
+            { s: '4"', w: "18" },
+            { s: '5"', w: "25" },
+            { s: '6"', w: "30" }
+          ],
           colors: ["Dark Green, Dark Blue, White, Black"],
           rollLength: "30mtr",
         },
@@ -250,15 +262,14 @@ const productsData = [
         product: {
           ProductName: "White Transparent",
           image: whiteLDpipes,
-          sizeWeight: [{ 
-            s1: '2', w1: "6", 
-            s2: '2.5', w2: "8" ,
-            s3: '3', w3: "10" ,
-            s4: '4', w4: "18" ,
-            s5: '5', w5: "25" ,
-            s6: '6', w6: "30" ,
-
-          }],
+          sizeWeight: [
+            { s: '2"', w: "6" },
+            { s: '2.5"', w: "8" },
+            { s: '3"', w: "10" },
+            { s: '4"', w: "18" },
+            { s: '5"', w: "25" },
+            { s: '6"', w: "30" }
+          ],
           //   colors: ["green", "blue", "orange"],
           rollLength: "30mtr",
         },
@@ -266,4 +277,5 @@ const productsData = [
     ],
   },
 ];
+
 export default productsData;
