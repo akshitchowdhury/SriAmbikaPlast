@@ -1,9 +1,9 @@
 const productsData = [
   {
-    category1: "PVC Suction Hose Pipe",
+    category: "PVC Suction Hose Pipe",
     subproducts: [
       {
-        product1: {
+        product: {
           ProductName: "Flex Suction",
           image: {},
           sizeWeight: [{ 
@@ -24,7 +24,7 @@ const productsData = [
         },
       },
       {
-        product2: {
+        product: {
           ProductName: "Super Flex Suction",
           image: {},
           sizeWeight: [{ 
@@ -47,10 +47,10 @@ const productsData = [
     ],
   },
   {
-    category2: "PVC Braided Hose Pipe",
+    category: "PVC Braided Hose Pipe",
     subproducts: [
       {
-        product1: {
+        product: {
           ProductName: "Top Lon Braided",
           image: {},
           sizeWeight: [{ s1: '1/2"', w1: "3.5",
@@ -61,7 +61,7 @@ const productsData = [
         },
       },
       {
-        product2: {
+        product: {
           ProductName: "Good Lon Braided",
           image: {},
           sizeWeight: [{ s1: '8MM', w1: "11", sMtr1: "100",
@@ -77,10 +77,10 @@ const productsData = [
     ],
   },
   {
-    category3: "Garden and Tubing Hose Pipe",
+    category: "Garden and Tubing Hose Pipe",
     subproducts: [
       {
-        product1: {
+        product: {
           ProductName: "Fifty-Fifty (50-50)",
           image: {},
           sizeWeight: [{ s1: '1/2"', w1: "3",
@@ -91,7 +91,7 @@ const productsData = [
         },
       },
       {
-        product2: {
+        product: {
           ProductName: "Color Transparent (C.T.T)",
           image: {},
           sizeWeight: [{ s1: '1/2"', w1: "2.5",
@@ -104,7 +104,7 @@ const productsData = [
         },
       },
       {
-        product3: {
+        product: {
           ProductName: "Color Zebra",
           image: {},
           sizeWeight: [{ s1: '1/2"', w1: "3",
@@ -117,7 +117,7 @@ const productsData = [
         },
       },
       {
-        product4: {
+        product: {
           ProductName: "Opek",
           image: {},
           sizeWeight: [{ s1: '1/2"', w1: "3",
@@ -130,7 +130,7 @@ const productsData = [
         },
       },
       {
-        product5: {
+        product: {
           ProductName: "White T.T",
           image: {},
           sizeWeight: [{ s1: '1/2"', w1: "3",
@@ -142,7 +142,7 @@ const productsData = [
         },
       },
       {
-        product6: {
+        product: {
           ProductName: "Metallic",
           image: {},
           sizeWeight: [{ s1: '1/2"', w1: "3",
@@ -155,7 +155,7 @@ const productsData = [
         },
       },
       {
-        product7: {
+        product: {
           ProductName: "Black Zebra",
           image: {},
           sizeWeight: [{ s1: '1/2"', w1: "3.5",
@@ -168,7 +168,7 @@ const productsData = [
         },
       },
       {
-        product8: {
+        product: {
           ProductName: "Double Decker",
           image: {},
           sizeWeight:  [{ s1: '1/2"', w1: "3.5",
@@ -181,7 +181,7 @@ const productsData = [
         },
       },
       {
-        product9: {
+        product: {
           ProductName: "Super Foam",
           image: {},
           sizeWeight:  [{ s1: '1/2"', w1: "3.5",
@@ -194,7 +194,7 @@ const productsData = [
         },
       },
       {
-        product10: {
+        product: {
           ProductName: "Super 32 Line Rib",
           image: {},
           sizeWeight:  [{ s1: '3/4"', w1: "5",
@@ -205,7 +205,7 @@ const productsData = [
         },
       },
       {
-        product11: {
+        product: {
           ProductName: "Level Tube",
           image: {},
           sizeWeight: [{ s1: '6MM', w1: "700GM, 1KG",
@@ -220,10 +220,10 @@ const productsData = [
     ],
   },
   {
-    category4: "LD Kissan Hose/Layflat Tube",
+    category: "LD Kissan Hose/Layflat Tube",
     subproducts: [
       {
-        product1: {
+        product: {
           ProductName: "Color L.D. Pipes",
           image: {},
           sizeWeight: [{ 
@@ -240,7 +240,7 @@ const productsData = [
         },
       },
       {
-        product2: {
+        product: {
           ProductName: "White Transparent",
           image: {},
           sizeWeight: [{ 

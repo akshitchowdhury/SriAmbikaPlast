@@ -1,17 +1,45 @@
-import React from 'react'
-import productsData from './productData'
-const Product = () => {
-  return (
-    <div className='h-[100vh] bg-gray-700'>
-      <h1 className='text-black text-center'>
-        {productsData[0].category1}
-      </h1>
-      <h1 className='text-black text-center'>
-        {productsData[0].subproducts[0].product1.colors}
-      </h1>
-      <h1>Hello Products</h1>
-    </div>
-  )
-}
+import React from 'react';
+import productsData from './productData';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
-export default Product
+// Component to display each product card
+const ProductCard = ({ productName, image }) => (
+    <div className="bg-white shadow-md rounded-lg overflow-hidden m-4 p-4 relative">
+      <div className="w-full h-40 bg-gray-200 flex items-center justify-center">
+        {/* Placeholder image if none is provided */}
+        <img src={image.src || 'https://via.placeholder.com/150'} alt={productName} className="h-full" />
+      </div>
+      <h2 className="text-lg font-semibold mt-2 text-center">{productName}</h2>
+      <div className="absolute bottom-0 left-0 m-2">
+        <FontAwesomeIcon icon={faPhone} className="text-blue-500" />
+      </div>
+      <div className="absolute bottom-0 right-0 m-2">
+        <FontAwesomeIcon icon={faWhatsapp} className="text-green-500" />
+      </div>
+    </div>
+  );
+
+// Main Products component to display categories and their products
+const Products = () => {
+  return (
+    <div className="container mx-auto px-4 py-8">
+      {productsData.map((categoryData, index) => (
+        <div key={index} className="mb-8">
+          <h1 className="text-2xl font-bold mb-4">{categoryData.category}</h1>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            {categoryData.subproducts.map((subproduct, subIndex) => {
+              const { ProductName, image } = subproduct.product;
+              return (
+                <ProductCard key={subIndex} productName={ProductName} image={image} />
+              );
+            })}
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+export default Products;
