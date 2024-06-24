@@ -100,7 +100,7 @@ function NAv() {
               </li> */}
               <li className="navLinks">
                 <Link
-                  to="/career"
+                  to="/products"
                   className="block py-2 px-3 hover:orange-400"
                   onClick={toggleMenu}
                 >
@@ -171,7 +171,7 @@ function NAv() {
             
             <li className="navLinks">
               <Link
-                to="/career"
+                to="/products"
                 className="block py-2 px-3
                 font-normal text-white rounded hover:bg-gray-100 md:hover:bg-transparent  md:p-0 md:hover:text-orange-200 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >

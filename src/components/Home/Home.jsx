@@ -6,6 +6,7 @@ import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import HomeContact from "./Home Contact Form/HomeContact";
 import WhyUs from "./Why us/WhyUs";
 import WhatWeOffer from "./What We Offer/WhatWeOffer";
+import Product from "../Product/Product";
 
 const Home = () => {
   return (
@@ -56,7 +57,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        
+        {/* <Product/> */}
       <HomeContact/>
       </div>
       </div>
