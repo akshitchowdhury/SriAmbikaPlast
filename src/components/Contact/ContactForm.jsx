@@ -16,14 +16,17 @@ const ContactForm = () => {
           <div className='flex flex-row gap-28'>
           <div className="flex flex-col">
             <label htmlFor="phone" className="text-white mb-2">Phone</label>
-            <input type="number" id="phone" name="phone" className="p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500" required />
+            <input type="number" id="phone" name="phone" className="p-3 rounded-md border border-gray-300 focus:outline-none 
+           mx-4 focus:ring-2 focus:ring-purple-500" required />
           </div>
           <div className="flex flex-col">
             <label htmlFor="message" className="text-white mb-2">Message</label>
             <input type='text' name="message"  className="p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500" required/>
           </div>
           </div>
-          <button type="submit" className="p-3 rounded-md bg-white text-purple-700 font-semibold hover:bg-amber-400 transition ease-in-out duration-300 focus:outline-none focus:ring-2 focus:ring-purple-500">
+          <button type="submit" className="p-3 w-[200px] mx-[20px] md:mx-[150px]  rounded-md bg-white
+           text-purple-700 font-semibold hover:bg-amber-400 transition 
+           ease-in-out duration-300 focus:outline-none focus:ring-2 focus:ring-purple-500">
             Submit
           </button>
         </form>

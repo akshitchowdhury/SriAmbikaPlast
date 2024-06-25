@@ -31,7 +31,7 @@ import WhiteTransparent from './components/Product/ProductStack/LD HOse Tube/Whi
 
 function App() {
   return (
-    <div className="App">
+    <div className="App overeflow-clip">
       <Router>
         <NAv />
         <Routes>
