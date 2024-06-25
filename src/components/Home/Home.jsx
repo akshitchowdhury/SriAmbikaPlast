@@ -11,9 +11,9 @@ import Product from "../Product/Product";
 const Home = () => {
   return (
     <>
-      <div className="home h-[240vh] md:h-[100vh]">
+      <div className="home h-auto md:h-[100vh]">
         <div
-          className="container absolute top-[0px]
+          className="container 
        mx-auto px-4 py-8 flex flex-col md:flex-row items-center justify-center gap-8"
         >
           <div className="HomeLeft flex-1 flex flex-col items-center p-5 md:p-20 gap-5 ">
