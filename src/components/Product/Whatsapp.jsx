@@ -40,8 +40,9 @@ const WhatsApp = ({ phoneNumber, message }) => {
   };
 
   return (
-    <div onClick={handleClick} style={styles.icon('#53E640', '#405DE6')} />
-      
+      <FontAwesomeIcon icon={faWhatsapp} onClick={handleClick} className="text-green-500 transition duration-300 
+        h-6 hover:text-green-700 transform hover:scale-110 " style={{cursor: "pointer"}} />
+        
   );
 };
 
