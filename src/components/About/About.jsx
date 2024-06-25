@@ -77,7 +77,7 @@ const About = () => {
               <img
                 loading="lazy"
                 src={approach}
-                className="w-full  h-auto "
+                className="w-full  h-[400px] "
                 alt="Our Approach"
               />
             </div>
@@ -85,41 +85,31 @@ const About = () => {
             <div className="flex flex-col  w-full md:w-full ">
               <div className="text-justify mb-8">
                 <h1 className="text-3xl font-bold text-gray-800">Who We Are</h1>
-                <p className="mt-4 text-gray-600">
-                  Sree Ambika Plast is an ISO 9001-2015 certified company based
-                  in Rajkot, specializing in the manufacturing of agricultural
-                  pipes for irrigation, and delivery pipes for home and
-                  construction use. Established in 2006, we aim to provide
-                  innovative and superior products that surpass traditional
-                  market offerings, ensuring 100% customer satisfaction and
-                  value. With a broad vision of introducing something new and
-                  better, we consistently strive to innovate and enhance our
-                  product range, maintaining a keen focus on quality and
-                  durability. Our commitment to excellence is reflected in our
-                  extensive experience of over 35 years in trading and 12 years
-                  in manufacturing. 
-                  <br/>
-                  <br/>
-                  <p> We are acutely aware of the challenges faced
-                  by customers regarding quality and service, which is why we
-                  have dedicated ourselves to providing reliable and efficient
-                  solutions. At Sree Ambika Plast, we believe in maintaining the
-                  highest standards of business ethics, prioritizing long-term
-                  relationships over quick profits. 
-                  </p>
-                  Our team of qualified
-                  engineers ensures that all processes adhere to ISO standards,
-                  implementing rigorous quality checks and controls. Our
-                  ultimate goal is to raise efficiency and prosperity for our
-                  customers by offering exceptional products and after-sales
-                  services. 
+                Sree Ambika Plast is an ISO 9001-2015 certified company based in
+                Karnataka, specializing in the manufacturing of agricultural pipes
+                for irrigation and delivery pipes for home and construction use.
+                Established in 2005, we aim to provide innovative and superior
+                products that surpass traditional market offerings, ensuring
+                100% customer satisfaction and value. With a broad vision of
+                introducing something new and better, we consistently strive to
+                innovate and enhance our product range, maintaining a keen focus
+                on quality and durability.
+                <br/>
+                <br/>
+                <p>
+                 Our commitment to excellence is
+                reflected in our extensive experience of over 35 years in
+                trading and 19 years in manufacturing. We are acutely aware of
+                the challenges faced by customers regarding quality and service,
+                which is why we have dedicated ourselves to providing reliable
+                and efficient solutions.
                 </p>
               </div>
             </div>
           </div>
 
           {/* <CountRise /> */}
-          <VisionMission/>
+          <VisionMission />
 
           {/* <section className="mb-12">
             <h2 className="text-2xl md:text-3xl font-semibold mb-4">

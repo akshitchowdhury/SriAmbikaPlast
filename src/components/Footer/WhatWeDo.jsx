@@ -40,11 +40,7 @@ const WhatWeDo = () => {
     </li>
     </Link>
 
-    <Link to = "/logodesign" onClick={()=> handleClick(logoDesRef)}>
-    <li className="mb-4">
-      Agri Tubes
-    </li>
-    </Link>
+    
     
   </ul>
     </div>
