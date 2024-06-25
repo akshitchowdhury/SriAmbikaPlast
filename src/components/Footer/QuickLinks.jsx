@@ -3,9 +3,8 @@ import { Link } from 'react-router-dom'
 const QuickLinks = () => {
     const homeRef = useRef(null);
     const aboutUsRef = useRef(null);
-    const servicesRef = useRef(null);
-    const portfolioRef = useRef(null);
-    const careerRef = useRef(null);
+
+    const productRef = useRef(null);
     const contactRef = useRef(null);
     const handleClick = (ref) => {
         ref.current.scrollIntoView({ behavior: 'smooth' });
@@ -27,7 +26,7 @@ const QuickLinks = () => {
                 <Link to="/portfolio" onClick={() => handleClick(portfolioRef)} className="navbar-links">Portfolio</Link>
               </li> */}
               <li className="mb-4">
-                <Link to="/career" onClick={() => handleClick(careerRef)} className="navbar-links">Products</Link>
+                <Link to="/products" onClick={() => handleClick(productRef)} className="navbar-links">Products</Link>
               </li>
               <li className="mb-4">
                 <Link to="/contact" onClick={() => handleClick(contactRef)} className="navbar-links">Contact Me</Link>
