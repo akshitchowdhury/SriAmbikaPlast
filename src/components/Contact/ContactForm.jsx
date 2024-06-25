@@ -2,35 +2,66 @@ import React from 'react'
 
 const ContactForm = () => {
   return (
-    <div className="left w-full md:w-1/2 p-6 md:p-10 rounded-md bg-orange-500  flex flex-col space-y-6">
-        <h2 className="text-lg md:text-3xl text-white font-medium">Get in Touch</h2>
-        <form className="flex flex-col space-y-4">
-          <div className="flex flex-col">
-            <label htmlFor="name" className="text-white mb-2">Name</label>
-            <input type="text" id="name" name="name" className="p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500" required />
-          </div>
-          <div className="flex flex-col">
-            <label htmlFor="email" className="text-white mb-2">Email</label>
-            <input type="email" id="email" name="email" className="p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500" required />
-          </div>
-          <div className='flex flex-row gap-28'>
-          <div className="flex flex-col">
-            <label htmlFor="phone" className="text-white mb-2">Phone</label>
-            <input type="number" id="phone" name="phone" className="p-3 rounded-md border border-gray-300 focus:outline-none 
-           mx-4 focus:ring-2 focus:ring-purple-500" required />
-          </div>
-          <div className="flex flex-col">
-            <label htmlFor="message" className="text-white mb-2">Message</label>
-            <input type='text' name="message"  className="p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500" required/>
-          </div>
-          </div>
-          <button type="submit" className="p-3 w-[200px] mx-[20px] md:mx-[150px]  rounded-md bg-white
-           text-purple-700 font-semibold hover:bg-amber-400 transition 
-           ease-in-out duration-300 focus:outline-none focus:ring-2 focus:ring-purple-500">
-            Submit
-          </button>
-        </form>
+   
+    <div className="ContactForm flex-1 bg-orange-400  p-8 rounded-lg shadow-lg">
+    <h2 className="text-2xl md:text-4xl font-semibold text-white mb-6">Let's Connect</h2>
+    <form className="space-y-6">
+      <div>
+        <label htmlFor="name" className="block text-sm font-medium text-left text-white">
+          Name
+        </label>
+        <input
+          type="text"
+          id="name"
+          className="mt-1 block w-full px-4 py-2  text-white border border-transparent rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none"
+          placeholder="Your Name"
+        />
       </div>
+      <div className="flex flex-col md:flex-row gap-6">
+        <div className="flex-1">
+          <label htmlFor="email" className="block text-sm font-medium text-white">
+            Email
+          </label>
+          <input
+            type="email"
+            id="email"
+            className="mt-1 block w-full px-4 py-2  text-white border border-transparent rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none"
+            placeholder="Your Email"
+          />
+        </div>
+        <div className="flex-1">
+          <label htmlFor="phone" className="block text-sm font-medium text-white">
+            Phone
+          </label>
+          <input
+            type="number"
+            id="phone"
+            className="mt-1 block w-full px-4 py-2  text-white border border-transparent rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none"
+            placeholder="Your Phone"
+          />
+        </div>
+      </div>
+      <div>
+        <label htmlFor="message" className="block text-sm font-medium text-white text-left">
+          Comments 
+        </label>
+        <textarea
+          id="message"
+          rows="4"
+          className="mt-1 block w-full px-4 py-2  text-white border border-transparent rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none"
+          placeholder="Your Message"
+        ></textarea>
+      </div>
+      <div>
+        <button
+          type="submit"
+          className="w-[200px] py-3 px-4 bg-orange-600 text-white font-medium rounded-md hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-300 ease-in-out"
+        >
+          Contact Us
+        </button>
+      </div>
+    </form>
+  </div>    
   )
 }
 
