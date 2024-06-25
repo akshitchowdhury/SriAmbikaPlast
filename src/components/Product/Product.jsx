@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom';
+import WhatsApp from './Whatsapp';
 
 const ProductCard = ({ productName, image }) => {
   const productPath = productName.toLowerCase().replace(/\s+/g, '-');
@@ -16,12 +17,17 @@ const ProductCard = ({ productName, image }) => {
       </div>
       <h2 className="text-xl font-semibold mt-4 text-center capitalize">{productName}</h2>
       <div className="absolute bottom-0 left-0 m-4">
+      <a href="tel:+91 9448539183">
         <FontAwesomeIcon icon={faPhone} className="text-blue-500 transition duration-300 hover:text-blue-700
         h-6 transform hover:scale-110" />
+        </a>
       </div>
       <div className="absolute bottom-0 right-0 m-4">
+        
         <FontAwesomeIcon icon={faWhatsapp} className="text-green-500 transition duration-300 
-        h-6 hover:text-green-700 transform hover:scale-110" />
+        h-6 hover:text-green-700 transform hover:scale-110" >
+        <WhatsApp/>
+        </FontAwesomeIcon>
       </div>
     </div>
   </Link>
