@@ -11,7 +11,7 @@ import Product from "../Product/Product";
 const Home = () => {
   return (
     <>
-      <div className="home h-[100vh] md:h-[100vh]">
+      <div className="home h-[240vh] md:h-[100vh]">
         <div
           className="container absolute top-[0px]
        mx-auto px-4 py-8 flex flex-col md:flex-row items-center justify-center gap-8"
