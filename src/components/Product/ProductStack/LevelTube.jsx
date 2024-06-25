@@ -19,13 +19,13 @@ const LevelTube = () => {
               <table className="min-w-full bg-white">
                 <thead>
                   <tr>
-                    <th className="py-2 px-4 bg-gray-200 text-gray-800 font-bold uppercase text-sm">Size</th>
-                    <th className="py-2 px-4 bg-gray-200 text-gray-800 font-bold uppercase text-sm">Weight</th>
+                    <th className="py-2 px-4 bg-orange-500 text-gray-800 font-bold uppercase text-sm">Size</th>
+                    <th className="py-2 px-4 bg-orange-500 text-gray-800 font-bold uppercase text-sm">Weight</th>
                   </tr>
                 </thead>
                 <tbody>
                   {product.sizeWeight.map((item, index) => (
-                    <tr key={index} className="even:bg-gray-100">
+                    <tr key={index} className="even:bg-orange-300">
                       <td className="py-2 px-4 border-b border-gray-200 text-gray-700">{item.s}</td>
                       <td className="py-2 px-4 border-b border-gray-200 text-gray-700">{item.w}</td>
                     </tr>

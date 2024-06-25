@@ -1,9 +1,20 @@
-import flexSuction from '../../assets/products/flexSuction.webp';
+import flexSuction from '../../assets/products/FlexSuction.png';
 import superFlexSuction from '../../assets/products/superFlexSuction.webp';
 import topLonBraided from '../../assets/products/topLonBraided.webp';
 import goodLonBraided from '../../assets/products/goodLonBraided.webp';
-import colorLDpipes from '../../assets/products/colorLDpipes.webp';
+import colorLDpipes from '../../assets/products/Color LD.png';
 import whiteLDpipes from '../../assets/products/whiteLDpipes.avif';
+import fiftyFifty from '../../assets/products/50-50.png';
+import colorZebra from '../../assets/products/ColorZebra.png';
+import WhiteTT from '../../assets/products/WhiteTT.png';
+import opek from '../../assets/products/Opek.png';
+import metallic from '../../assets/products/Metallic.png';
+import ctt from '../../assets/products/CTT.png';
+import blackZebra from '../../assets/products/BlackZebra.png';
+import levelTube from '../../assets/products/LevelTube.png';
+import doubleDecker from '../../assets/products/DoubleDecker.png';
+import SuperForam from '../../assets/products/SuperFoam.png';
+import LineRib from '../../assets/products/32LineRib.png';
 
 const productsData = [
   {
@@ -90,7 +101,7 @@ const productsData = [
       {
         product: {
           ProductName: "Fifty-Fifty (50-50)",
-          image: {},
+          image: fiftyFifty,
           sizeWeight: [
             { s: '1/2"', w: "3" },
             { s: '3/4"', w: "4.5" },
@@ -103,7 +114,7 @@ const productsData = [
       {
         product: {
           ProductName: "Color Transparent (C.T.T)",
-          image: {},
+          image: ctt,
           sizeWeight: [
             { s: '1/2"', w: "2.5" },
             { s: '3/4"', w: "3.5" },
@@ -117,7 +128,7 @@ const productsData = [
       {
         product: {
           ProductName: "Color Zebra",
-          image: {},
+          image: colorZebra,
           sizeWeight: [
             { s: '1/2"', w: "3" },
             { s: '3/4"', w: "4.5" },
@@ -131,7 +142,7 @@ const productsData = [
       {
         product: {
           ProductName: "Opek",
-          image: {},
+          image: opek,
           sizeWeight: [
             { s: '1/2"', w: "3" },
             { s: '3/4"', w: "4.5" },
@@ -145,7 +156,7 @@ const productsData = [
       {
         product: {
           ProductName: "White T.T",
-          image: {},
+          image: WhiteTT,
           sizeWeight: [
             { s: '1/2"', w: "3" },
             { s: '3/4"', w: "4.5" },
@@ -158,7 +169,7 @@ const productsData = [
       {
         product: {
           ProductName: "Metallic",
-          image: {},
+          image: metallic,
           sizeWeight: [
             { s: '1/2"', w: "3" },
             { s: '3/4"', w: "4.5" },
@@ -172,7 +183,7 @@ const productsData = [
       {
         product: {
           ProductName: "Black Zebra",
-          image: {},
+          image: blackZebra,
           sizeWeight: [
             { s: '1/2"', w: "3.5" },
             { s: '3/4"', w: "5" },
@@ -186,7 +197,7 @@ const productsData = [
       {
         product: {
           ProductName: "Double Decker",
-          image: {},
+          image: doubleDecker,
           sizeWeight: [
             { s: '1/2"', w: "3.5" },
             { s: '3/4"', w: "5" },
@@ -200,7 +211,7 @@ const productsData = [
       {
         product: {
           ProductName: "Super Foam",
-          image: {},
+          image: SuperForam,
           sizeWeight: [
             { s: '1/2"', w: "3.5" },
             { s: '3/4"', w: "5" },
@@ -214,7 +225,7 @@ const productsData = [
       {
         product: {
           ProductName: "Super 32 Line Rib",
-          image: {},
+          image: LineRib,
           sizeWeight: [
             { s: '3/4"', w: "5" },
             { s: '1"', w: "8.5" }
@@ -227,7 +238,7 @@ const productsData = [
       {
         product: {
           ProductName: "Level Tube",
-          image: {},
+          image: levelTube,
           sizeWeight: [
             { s: '6MM', w: "700GM, 1KG" },
             { s: '8MM', w: "1KG" },

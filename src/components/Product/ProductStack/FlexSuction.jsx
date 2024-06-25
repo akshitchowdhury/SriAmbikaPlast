@@ -5,7 +5,7 @@ const FlexSuction = () => {
   const product = productsData[0].subproducts[0].product;
 
   return (
-    <div className="min-h-screen bg-orange-400 flex flex-col items-center justify-center p-4">
+    <div className="min-h-screen bg-orange-400 flex flex-col items-center  justify-center p-4">
       <div className="bg-white rounded-lg shadow-lg overflow-hidden max-w-4xl w-full p-6">
         <h1 className="text-3xl font-bold text-gray-800 mb-4 text-center">{product.ProductName}</h1>
         <div className="flex flex-col md:flex-row items-center">
@@ -19,13 +19,13 @@ const FlexSuction = () => {
               <table className="min-w-full bg-white">
                 <thead>
                   <tr>
-                    <th className="py-2 px-4 bg-gray-200 text-gray-800 font-bold uppercase text-sm">Size</th>
-                    <th className="py-2 px-4 bg-gray-200 text-gray-800 font-bold uppercase text-sm">Weight</th>
+                    <th className="py-2 px-4 bg-orange-500 text-gray-800 font-bold uppercase text-sm">Size</th>
+                    <th className="py-2 px-4 bg-orange-500 text-gray-800 font-bold uppercase text-sm">Weight</th>
                   </tr>
                 </thead>
                 <tbody>
                   {product.sizeWeight.map((item, index) => (
-                    <tr key={index} className="even:bg-gray-100">
+                    <tr key={index} className="even:bg-orange-300">
                       <td className="py-2 px-4 border-b border-gray-200 text-gray-700">{item.s}</td>
                       <td className="py-2 px-4 border-b border-gray-200 text-gray-700">{item.w}</td>
                     </tr>
