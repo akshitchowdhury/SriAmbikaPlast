@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import productsData from './productData';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
@@ -8,12 +8,17 @@ import WhatsApp from './Whatsapp';
 
 const ProductCard = ({ productName, image }) => {
   const productPath = productName.toLowerCase().replace(/\s+/g, '-');
+  let productRef = productName;
+  productRef = useRef(null)
+    const handleClick = (ref) => {
+        ref.current.scrollIntoView({ behavior: 'smooth' });
+      };
   return (
     <>
     
     <div className="bg-white shadow-lg border border-gray-200 rounded-md overflow-hidden m-4 p-6 h-auto w-auto 
     md:h-[500px] md:w-[500px] lg:h-[500px] lg:w-[500px]  relative transition transform hover:scale-105">
-    <Link to={`/${productPath}`} className="block">  
+    <Link to={`/${productPath}`} onClick={() => handleClick(productRef)} className="block">  
       <div className="w-full h-[400px] flex items-center justify-center">
         <img src={image} alt={productName} className="h-3/4 w-full object-contain" />
       </div>

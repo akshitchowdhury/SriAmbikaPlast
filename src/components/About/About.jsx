@@ -77,7 +77,7 @@ const About = () => {
               <img
                 loading="lazy"
                 src={approach}
-                className="w-full  h-[400px] "
+                className="w-full  md:h-[400px] "
                 alt="Our Approach"
               />
             </div>
