@@ -13,7 +13,7 @@ function NAv() {
   };
 
   return (
-    <nav className="bg-orange-600 dark:bg-gray-900 w-full md:h-[100px] z-20 top-0 start-0 relative sticky">
+    <nav className="bg-orange-600 dark:bg-orange-600 w-full md:h-[100px] z-20 top-0 start-0 relative sticky">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-6">
         <Link
           to="/"
@@ -60,7 +60,7 @@ function NAv() {
           </button>
         </div>
         {menuOpen && (
-          <div className="absolute top-full left-0 w-full bg-zinc-600 text-white border border-gray-200 md:hidden">
+          <div className="absolute top-full left-0 w-full bg-orange-500 text-white border border-gray-200 md:hidden">
             <ul className="flex flex-col p-4 md:p-0  font-thin text-sm uppercase">
               <li className="navLinks">
                 <Link
