@@ -1,5 +1,5 @@
 import React from "react";
-import whatWeOffer from "../../../assets/whatWeOffer.jpg";
+import whatWeOffer from "../../../assets/products/group.png";
 const WhatWeOffer = () => {
   return (
     <>
