@@ -12,13 +12,13 @@ const ProductCard = ({ productName, image }) => {
     <>
     
     <div className="bg-white shadow-lg border border-gray-200 rounded-md overflow-hidden m-4 p-6 h-auto w-auto 
-    md:h-[500px] md:w-[500px] lg:h-[500px] lg:w-[500px] relative transition transform hover:scale-105">
+    md:h-[500px] md:w-[500px] lg:h-[500px] lg:w-[500px]  relative transition transform hover:scale-105">
     <Link to={`/${productPath}`} className="block">  
       <div className="w-full h-[400px] flex items-center justify-center">
         <img src={image} alt={productName} className="h-3/4 w-full object-contain" />
       </div>
       </Link>
-      <h2 className="text-xl font-semibold mt-4 text-center capitalize">{productName}</h2>
+      <h2 className="text-2xl text-gray-700 font-semibold mt-4 text-center capitalize">{productName}</h2>
       <div className="absolute bottom-0 left-0 m-4">
       <a href="tel:+91 9448539183" style={{cursor: "pointer"}}>
         <FontAwesomeIcon icon={faPhone} className="text-blue-500 transition duration-300 hover:text-blue-700
