@@ -15,7 +15,7 @@ const ProductCard = ({ productName, image }) => {
             {/* Placeholder image if none is provided */}
             <img src={image} alt={productName} className="h-full w-full" />
           </div>
-          <h2 className="text-lg font-semibold mt-2 text-center">{productName}</h2>
+          <h2 className="text-lg font-semibold mt-2 text-center">{productPath}</h2>
           <div className="absolute bottom-0 left-0 m-2">
             <FontAwesomeIcon icon={faPhone} className="text-blue-500 transition duration-300 hover:text-blue-700 transform hover:scale-110" />
           </div>
