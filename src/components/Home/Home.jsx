@@ -11,9 +11,11 @@ import Product from "../Product/Product";
 const Home = () => {
   return (
     <>
-      <div className="home h-[200vh] md:h-[100vh]">
-        <div
-          className="container absolute top-0 md:labsolute md:top-0 lg:absolute lg:top-0
+      <div className="home h-[900px] md:h-[100vh]">
+        
+      </div>
+      <div
+          className="container absolute top-12 md:labsolute md:top-0 lg:absolute lg:top-24
        mx-auto px-4 py-8 flex flex-col md:flex-row items-center justify-center gap-8"
         >
           <div className="HomeLeft flex-1 flex flex-col items-center p-5 md:p-20 gap-5 ">
@@ -62,7 +64,6 @@ const Home = () => {
           
           <HomeContact />
         </div>
-      </div>
       <WhatWeOffer />
       <WhyUs />
     </>
