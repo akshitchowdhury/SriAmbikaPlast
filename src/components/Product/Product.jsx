@@ -45,7 +45,7 @@ md:h-[500px] md:w-[500px] lg:h-[500px] lg:w-[500px] relative transition transfor
 const Products = () => {
   return (
     <>
-    <ProductHero/>
+    {/* <ProductHero/> */}
     <div className="container mx-auto px-4 py-8">
       {productsData.map((categoryData, index) => (
         <div key={index} className="mb-12">

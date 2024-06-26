@@ -23,7 +23,7 @@ const Home = () => {
               </p>
 
               <div className="text-4xl md:text-7xl font-semibold text-white leading-tight md:leading-[79px]">
-                Sri Ambika Plast
+                Shri Ambika Plast
               </div>
 
               <p className="text-lg my-4 w-full md:w-2/3 text-white font-normal">
