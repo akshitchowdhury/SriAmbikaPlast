@@ -11,9 +11,9 @@ import Product from "../Product/Product";
 const Home = () => {
   return (
     <>
-      <div className="home h-auto md:h-[100vh]">
+      <div className="home h-[200vh] md:h-[100vh]">
         <div
-          className="container absolute top-0
+          className="container absolute top-0 md:labsolute md:top-0 lg:absolute lg:top-0
        mx-auto px-4 py-8 flex flex-col md:flex-row items-center justify-center gap-8"
         >
           <div className="HomeLeft flex-1 flex flex-col items-center p-5 md:p-20 gap-5 ">
@@ -22,7 +22,7 @@ const Home = () => {
                 Top quality Pipe manufactureres in the industry.
               </p>
 
-              <div className="text-4xl md:text-7xl font-semibold text-white leading-tight md:leading-[79px]">
+              <div className="text-xl md:text-7xl font-semibold text-white leading-tight md:leading-[79px]">
                 Shri Ambika Plast
               </div>
 
