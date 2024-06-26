@@ -7,7 +7,7 @@ const BlackZebra = () => {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center p-4 bg-gray-100">
       <div className="bg-gray-100 rounded-lg shadow-lg overflow-hidden max-w-6xl w-full p-8">
-        <p className="text-2xl font-bold text-white bg-orange-600 w-full p-4 text-center">Shri Anchar Royal Flex (Colors: {product.colors.join(', ')})</p>
+        <p className="text-2xl font-semibold text-white bg-orange-600 w-full p-4 text-center">SHRI ANCHAR ROYAL FLEX (Colors: {product.colors.join(', ')})</p>
         <div className="flex flex-col md:flex-row items-center mt-6">
           <div className="w-full md:w-1/2 lg:w-[500px] lg:h-[500px] h-auto object-cover rounded mb-6 md:mb-0">
             <img 
