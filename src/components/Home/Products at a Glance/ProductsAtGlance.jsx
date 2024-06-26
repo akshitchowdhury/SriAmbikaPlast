@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import Slider from 'react-slick';
 import { Link } from 'react-router-dom';
 import 'slick-carousel/slick/slick.css';
@@ -47,8 +47,15 @@ const ProductsAtGlance = () => {
       },
     ],
   };
-
-  return (
+//   const productRef = useRef(null);
+//   const handleClick = (ref) => {
+//     ref.current.scrollIntoView({ behavior: 'smooth' });
+//   };
+  
+const handleClick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };  
+return (
     <section id="cat" className="cat py-12 bg-gray-100">
       <div className="container-fluid">
         <div className="section-title text-center mb-8">
@@ -61,7 +68,8 @@ const ProductsAtGlance = () => {
               <div className="cat_single_box">
                 <div className="img_holder relative">
                   <img src={product.image} alt={product.ProductName} className="w-full h-full object-cover" />
-                  <Link to={`${product.ProductName.replace(/\s+/g, '-').toLowerCase()}`} className="overlay absolute inset-0 bg-black opacity-50 flex items-center justify-center transition-opacity duration-300 hover:opacity-75">
+                  <Link to={`${product.ProductName.replace(/\s+/g, '-').toLowerCase()}`}
+                   onClick={handleClick} className="overlay absolute inset-0 bg-black opacity-50 flex items-center justify-center transition-opacity duration-300 hover:opacity-75">
                     <div className="text-white text-center">
                       <h3 className="text-lg font-semibold">{product.ProductName}</h3>
                     </div>

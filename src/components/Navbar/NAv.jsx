@@ -12,11 +12,14 @@ function NAv() {
     setMenuOpen(!menuOpen);
   };
 
+  const handleClick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }; 
   return (
     <nav className="bg-orange-600 dark:bg-orange-600 w-full md:h-[100px] z-20 top-0 start-0 relative sticky">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-6">
         <Link
-          to="/"
+          to="/" onClick={handleClick}
           className="flex flex-col items-center space-x-2 rtl:space-x-reverse"
         >
           {/* <img src={logo} className="h-24" alt="Flowbite Logo" /> */}
@@ -24,7 +27,7 @@ function NAv() {
           {/* <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span> */}
         </Link>
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-          <Link to="/contact">
+          <Link to="/contact" onClick={handleClick}>
             {" "}
             <button
               type="button"
@@ -131,6 +134,7 @@ function NAv() {
             <li className="navLinks">
               <Link
                 to="/"
+                onClick={handleClick}
                 className="block py-2 px-3 text-white
                 font-normal bg-blue-700 rounded md:bg-transparent md:text-white md:p-0 md:dark:text-blue-500 md:hover:text-orange-200"
                 aria-current="page"
@@ -140,6 +144,7 @@ function NAv() {
             </li>
             <li className="navLinks">
               <Link
+              onClick={handleClick}
                 to="/about"
                 className="block py-2 px-
                 font-normal text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 md:hover:text-orange-200 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
@@ -172,6 +177,7 @@ function NAv() {
             <li className="navLinks">
               <Link
                 to="/products"
+                onClick={handleClick}
                 className="block py-2 px-3
                 font-normal text-white rounded hover:bg-gray-100 md:hover:bg-transparent  md:p-0 md:hover:text-orange-200 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >
@@ -181,6 +187,7 @@ function NAv() {
             <li className="navLinks">
               <Link
                 to="/contact"
+                onClick={handleClick}
                 className="block py-2 px-3
                 font-normal text-white rounded hover:bg-gray-100 md:hover:bg-transparent  md:p-0 md:hover:text-orange-200 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >

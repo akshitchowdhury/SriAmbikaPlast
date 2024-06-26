@@ -10,13 +10,13 @@ import ProductsAtGlance from '../Home/Products at a Glance/ProductsAtGlance';
 
 const ProductCard = ({ productName, image }) => {
   const productPath = productName.toLowerCase().replace(/\s+/g, '-');
-  const productRef = useRef(null);
-  const handleClick = (ref) => {
-    ref.current.scrollIntoView({ behavior: 'smooth' });
-  };
+  // 
+  const handleClick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }; 
   return (
     <div className="relative bg-white shadow-lg border border-gray-200 rounded-md overflow-hidden m-4 p-6 h-auto w-auto md:h-[500px] md:w-[500px] lg:h-[500px] lg:w-[500px] transition transform hover:bg-opacity-30 hover:backdrop-filter hover:backdrop-blur-lg">
-      <Link to={`/${productPath}`} onClick={() => handleClick(productRef)} className="block relative group">
+      <Link to={`/${productPath}`} onClick={handleClick}  className="block relative group">
         <div className="w-full h-[400px] flex items-center justify-center">
           <img src={image} alt={productName} className="h-3/4 w-full object-contain transition duration-300 hover:scale-105 group-hover:filter group-hover:brightness-125 group-hover:drop-shadow-lg" />
         </div>
@@ -53,6 +53,7 @@ const Products = () => {
   });
 
   return (
+
     <>
       {/* <ProductHero/> */}
       <ProductsAtGlance />
