@@ -52,8 +52,8 @@ const ProductsAtGlance = () => {
     <section id="cat" className="cat py-12 bg-gray-100">
       <div className="container-fluid">
         <div className="section-title text-center mb-8">
-          <h2 className="text-3xl font-bold">Products at <b>a Glance</b></h2>
-          <span className="block w-32 h-1 bg-black mx-auto my-4"></span>
+          <h2 className="text-3xl font-bold">Products at <b className='text-orange-500'>a Glance</b></h2>
+          <span className="block w-32 h-1 bg-orange-500 mx-auto my-4"></span>
         </div>
         <Slider {...settings}>
           {flattenedProducts.map((product, index) => (
