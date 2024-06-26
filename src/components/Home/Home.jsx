@@ -13,7 +13,7 @@ const Home = () => {
     <>
       <div className="home h-auto md:h-[100vh]">
         <div
-          className="container 
+          className="container absolute top-0
        mx-auto px-4 py-8 flex flex-col md:flex-row items-center justify-center gap-8"
         >
           <div className="HomeLeft flex-1 flex flex-col items-center p-5 md:p-20 gap-5 ">
@@ -59,7 +59,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          {/* <Product/> */}
+          
           <HomeContact />
         </div>
       </div>
