@@ -6,6 +6,7 @@ import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom';
 import WhatsApp from './Whatsapp';
 import ProductHero from './Product Hero Section/ProductHero';
+import ProductsAtGlance from '../Home/Products at a Glance/ProductsAtGlance';
 
 const ProductCard = ({ productName, image }) => {
   const productPath = productName.toLowerCase().replace(/\s+/g, '-');
@@ -47,6 +48,7 @@ const Products = () => {
   return (
     <>
     {/* <ProductHero/> */}
+    <ProductsAtGlance/>
     <div className="container mx-auto px-4 py-8">
       {productsData.map((categoryData, index) => (
         <div key={index} className="mb-12">

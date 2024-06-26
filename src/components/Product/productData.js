@@ -1,5 +1,5 @@
 import flexSuction from '../../assets/products/FlexSuction.png';
-import superFlexSuction from '../../assets/products/superFlexSuction.webp';
+import superFlexSuction from '../../assets/products/superFlexSuction.png';
 import topLonBraided from '../../assets/products/topLonBraided.webp';
 import goodLonBraided from '../../assets/products/goodLonBraided.webp';
 import colorLDpipes from '../../assets/products/Color LD.png';

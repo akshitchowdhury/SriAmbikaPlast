@@ -7,6 +7,8 @@ import HomeContact from "./Home Contact Form/HomeContact";
 import WhyUs from "./Why us/WhyUs";
 import WhatWeOffer from "./What We Offer/WhatWeOffer";
 import Product from "../Product/Product";
+import FeaturesSection from "./Features Section/FeaturesSection";
+import ProductsAtGlance from "./Products at a Glance/ProductsAtGlance";
 
 const Home = () => {
   return (
@@ -64,6 +66,8 @@ const Home = () => {
           
           <HomeContact />
         </div>
+        <ProductsAtGlance/>
+        <FeaturesSection/>
       <WhatWeOffer />
       <WhyUs />
     </>
