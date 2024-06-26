@@ -67,9 +67,10 @@ return (
             <div key={index} className="px-4">
               <div className="cat_single_box">
                 <div className="img_holder relative">
-                  <img src={product.image} alt={product.ProductName} className="w-full h-full object-cover" />
+                  <img src={product.image} alt={product.ProductName} className="w-full h-[40px] object-contain" />
                   <Link to={`${product.ProductName.replace(/\s+/g, '-').toLowerCase()}`}
-                   onClick={handleClick} className="overlay absolute inset-0 bg-black opacity-50 flex items-center justify-center transition-opacity duration-300 hover:opacity-75">
+                   onClick={handleClick} className="overlay absolute inset-0 bg-black opacity-50
+                    flex items-center justify-center transition-opacity duration-300 hover:opacity-75">
                     <div className="text-white text-center">
                       <h3 className="text-lg font-semibold">{product.ProductName}</h3>
                     </div>
