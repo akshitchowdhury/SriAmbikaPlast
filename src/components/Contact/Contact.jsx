@@ -1,6 +1,9 @@
 import React from 'react';
 import './Contact.css';
 import ContactForm from './ContactForm';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope, faLocation, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons/faMapMarkerAlt';
 
 const Contact = () => {
   return (
@@ -18,13 +21,28 @@ const Contact = () => {
 
         {/* Bottom div as an address card */}
         <div className="w-full p-6 h-auto md:h-auto bg-white shadow-md rounded-md border border-gray-300 text-left">
-          <h2 className="text-lg font-semibold mb-2">Address</h2>
-          <p className="mb-2">No.20, 15th Cross, Malagala Main Road</p>
-          <p className="mb-2">Nagarabhavi 2nd Stage</p>
-          <p className="mb-2">Bengaluru-560091</p>
-          <p className="mb-2">Phone: +91 9448539183 / +91 9845511324</p>
-          <p>Email: seraramsolanki@gmail.com</p>
-        </div>
+    <h2 className="text-lg font-semibold mb-2">Address</h2>
+    <p className="mb-2">
+      <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2 text-orange-500" />
+      <span>No.20, 15th Cross, Malagala Main Road</span>
+    </p>
+    <p className="mb-2">
+      <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2 text-white" />
+      <span>Nagarabhavi 2nd Stage</span>
+    </p>
+    <p className="mb-2">
+      <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2 text-white" />
+      <span>Bengaluru-560091</span>
+    </p>
+    <p className="mb-2">
+      <FontAwesomeIcon icon={faPhone} className="mr-2 text-orange-500" />
+      <span>Phone: +91 9448539183 / +91 9845511324</span>
+    </p>
+    <p>
+      <FontAwesomeIcon icon={faEnvelope} className="mr-2 text-orange-500" />
+      <span>Email: seraramsolanki@gmail.com</span>
+    </p>
+  </div>
       </div>
       
     </div>

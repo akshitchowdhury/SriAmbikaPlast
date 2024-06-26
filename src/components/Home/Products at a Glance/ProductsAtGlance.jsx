@@ -62,7 +62,7 @@ return (
           <h2 className="text-3xl font-bold">Products at <b className='text-orange-500 font-semibold'>a Glance</b></h2>
           <span className="block w-32 h-1 bg-orange-500 mx-[400px] -my-4"></span>
           <span className="block w-32 h-1 bg-orange-500 mx-[826px] my-[12px]"></span>
-          <span className="block w-32 h-1 bg-orange-500 mx-auto my-16"></span>
+          <span className="block w-32 h-1 bg-orange-500 md:bg-gray-100 md:mx-auto md:my-8"></span>
         </div>
         <Slider {...settings}>
           {flattenedProducts.map((product, index) => (
