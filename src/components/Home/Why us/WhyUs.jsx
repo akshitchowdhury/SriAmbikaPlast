@@ -7,10 +7,10 @@ const WhyUs = () => {
         <div className="flex-1">
           <div className="flex flex-col items-start">
             <h1 className="text-3xl md:text-4xl text-gray-700 font-semibold mb-6 text-center md:text-left">
-              Why Choose Sri Ambika Plast Services
+              Why Choose Shri Ambika Plast Services
             </h1>
             <p className="text-lg md:text-xl text-gray-600 mb-6 text-center md:text-left">
-              In the intricate world of water and agricultural piping, Sri
+              In the intricate world of water and agricultural piping, Shri
               Ambika Plast stands out with its unmatched expertise and extensive
               network of resources. We focus on addressing our customers' most
               pressing challenges and opportunities to streamline your
@@ -19,7 +19,7 @@ const WhyUs = () => {
               efficient irrigation solutions, innovative product design,
               customized manufacturing, and comprehensive support. Whether you
               are looking for durable pipes for irrigation, reliable water
-              delivery systems, or bespoke piping solutions, Sri Ambika Plast is
+              delivery systems, or bespoke piping solutions, Shri Ambika Plast is
               your trusted partner in achieving excellence in the water and
               agri-pipe manufacturing industry.
             </p>

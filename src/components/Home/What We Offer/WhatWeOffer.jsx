@@ -22,7 +22,7 @@ const WhatWeOffer = () => {
                 Source from India
               </h1>
               <p className="text-lg md:text-xl text-gray-600 mb-6 text-center md:text-left">
-                At Sri Ambika Plast, our supplier outreach initiative is an
+                At Shri Ambika Plast, our supplier outreach initiative is an
                 integral part of our overall strategy to add value to the
                 communities we serve. Across our company, our employees are
                 dedicated to leading the way in delivering top-quality piping
