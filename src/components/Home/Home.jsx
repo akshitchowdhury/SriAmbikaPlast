@@ -11,6 +11,9 @@ import FeaturesSection from "./Features Section/FeaturesSection";
 import ProductsAtGlance from "./Products at a Glance/ProductsAtGlance";
 
 const Home = () => {
+  const handleClick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
   return (
     <>
       <div className="home h-[900px] md:h-[100vh]">
@@ -50,6 +53,7 @@ const Home = () => {
                   </button>
                 </Link>
 
+                <Link to={"/products"} onClick={handleClick}>
                 <button
                   type="button"
                   className="text-orange-600 px-6 py-2 h-14 w-full sm:w-auto md:w-48
@@ -58,8 +62,9 @@ const Home = () => {
                   hover:bg-orange-600 hover:text-white hover:transform hover:scale-105 hover:shadow-lg transition duration-300 ease-in-out
                   sm:mt-4 md:mt-0 lg:mt-0"
                 >
-                  Brochure
+                  View our Products
                 </button>
+                </Link>
               </div>
             </div>
           </div>
