@@ -13,23 +13,23 @@ const BlackZebra = () => {
             <img 
               src={product.image} 
               alt={product.ProductName} 
-              className="w-full h-auto object-cover rounded-lg"
+              className="w-full h-auto object-cover"
             />
-            <h1 className="text-4xl font-bold text-gray-800 mt-4 text-center">{product.ProductName}</h1>
+            <h1 className="text-2xl font-bold text-orange-600 mt-4 text-center">{product.ProductName}</h1>
           </div>
           <div className="md:ml-6 w-full md:w-1/2">
-            <div className="overflow-x-auto">
-              <table className="min-w-full bg-white">
+          <div className="overflow-x-auto">
+              <table className="min-w-full bg-white border border-gray-300">
                 <thead>
                   <tr>
-                    <th className="py-3 px-5 bg-orange-600 text-white font-bold uppercase text-lg">Size</th>
-                    <th className="py-3 px-5 bg-orange-600 text-white font-bold uppercase text-lg">Weight</th>
+                    <th className="py-3 px-5 bg-orange-600 text-white font-bold uppercase text-lg border-b border-gray-300">Size</th>
+                    <th className="py-3 px-5 bg-orange-600 text-white font-bold uppercase text-lg border-b border-gray-300">Weight</th>
                   </tr>
                 </thead>
                 <tbody>
                   {product.sizeWeight.map((item, index) => (
                     <tr key={index} className="even:bg-orange-200">
-                      <td className="py-3 px-5 text-gray-700 text-center text-lg">{item.s}</td>
+                      <td className="py-3 px-5 text-gray-700 text-center text-lg border-r border-gray-300">{item.s}</td>
                       <td className="py-3 px-5 text-gray-700 text-center text-lg">{item.w}</td>
                     </tr>
                   ))}
@@ -37,7 +37,7 @@ const BlackZebra = () => {
               </table>
             </div>
             <div className="mt-8">
-              <h2 className="text-xl font-bold text-green-600">NET RATE to be confirmed before order.</h2>
+              <h2 className="text-xl font-bold text-green-600">ROLL LENGTH: {product.rollLength}</h2>
             </div>
           </div>
         </div>
