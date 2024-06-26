@@ -5,6 +5,7 @@ import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom';
 import WhatsApp from './Whatsapp';
+import ProductHero from './Product Hero Section/ProductHero';
 
 const ProductCard = ({ productName, image }) => {
   const productPath = productName.toLowerCase().replace(/\s+/g, '-');
@@ -17,25 +18,25 @@ const ProductCard = ({ productName, image }) => {
     <>
     
     <div className="bg-white shadow-lg border border-gray-200 rounded-md overflow-hidden m-4 p-6 h-auto w-auto 
-    md:h-[500px] md:w-[500px] lg:h-[500px] lg:w-[500px]  relative transition transform hover:scale-105">
-    <Link to={`/${productPath}`} onClick={() => handleClick(productRef)} className="block">  
-      <div className="w-full h-[400px] flex items-center justify-center">
-        <img src={image} alt={productName} className="h-3/4 w-full object-contain" />
-      </div>
-      </Link>
-      <h2 className="text-2xl text-gray-700 font-semibold mt-4 text-center capitalize">{productName}</h2>
-      <div className="absolute bottom-0 left-0 m-4">
-      <a href="tel:+91 9448539183" style={{cursor: "pointer"}}>
-        <FontAwesomeIcon icon={faPhone} className="text-blue-500 transition duration-300 hover:text-blue-700
-        h-6 transform hover:scale-110" />
-        </a>
-      </div>
-      <div className="absolute bottom-0 right-0 m-4">
-        
-        <WhatsApp/>
-        
-      </div>
+md:h-[500px] md:w-[500px] lg:h-[500px] lg:w-[500px] relative transition transform hover:scale-105">
+  <Link to={`/${productPath}`} onClick={() => handleClick(productRef)} className="block">  
+    <div className="w-full h-[400px] flex items-center justify-center">
+      <img src={image} alt={productName} className="h-3/4 w-full object-contain" />
     </div>
+  </Link>
+  <h2 className="text-2xl text-gray-700 font-semibold mt-4 text-center capitalize">{productName}</h2>
+  <div className="absolute bottom-0 left-0 m-4">
+    <a href="tel:+91 9448539183" style={{ cursor: "pointer" }} className="border border-gray-300 rounded w-10 h-10 flex items-center justify-center">
+      <FontAwesomeIcon icon={faPhone} className="text-blue-500 transition duration-300 hover:text-blue-700 h-6 transform hover:scale-110" />
+    </a>
+  </div>
+  <div className="absolute bottom-0 right-0 m-4">
+    <div className="border border-gray-300 rounded w-10 h-10 flex items-center justify-center">
+      <WhatsApp />
+    </div>
+  </div>
+</div>
+
   
   </>
   );
@@ -43,6 +44,8 @@ const ProductCard = ({ productName, image }) => {
 
 const Products = () => {
   return (
+    <>
+    <ProductHero/>
     <div className="container mx-auto px-4 py-8">
       {productsData.map((categoryData, index) => (
         <div key={index} className="mb-12">
@@ -58,6 +61,7 @@ const Products = () => {
         </div>
       ))}
     </div>
+    </>
   );
 };
 

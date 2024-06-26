@@ -1,0 +1,21 @@
+.carousel .control-arrow {
+  background: rgba(255, 0, 0, 0.5); /* Red color with some transparency */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel .control-prev.control-arrow {
+  left: 15px; /* Adjust positioning as needed */
+}
+
+.carousel .control-next.control-arrow {
+  right: 15px; /* Adjust positioning as needed */
+}
+
+.carousel .control-arrow:hover {
+  background: rgba(255, 0, 0, 0.8); /* Darker red when hovered */
+}
