@@ -12,7 +12,7 @@ const WhatWeOffer = () => {
             <img
               src={whatWeOffer}
               alt="Source from India"
-              className="max-w-full h-auto"
+              className="max-w-full h-auto lg:h-[300px]"
             />
           </div>
 
