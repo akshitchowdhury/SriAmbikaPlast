@@ -27,7 +27,7 @@ const FeaturesSection = () => {
     <section id="fact" className="py-12 bg-gray-100">
       <div className="container mx-auto px-4">
         <div className="text-center mb-8">
-          <h2 className="text-3xl font-bold">Features to decide <b className='text-orange-600'>the right Product</b></h2>
+          <h2 className="text-3xl font-bold">Features to decide <b className='text-orange-600 font-semibold'>the right Product</b></h2>
           <span className="block w-32 h-1 bg-orange-600 mx-auto my-4"></span>
         </div>
         <div className="flex flex-wrap -mx-4">
