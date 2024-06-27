@@ -18,7 +18,7 @@ const ProductCard = ({ productName, image }) => {
     transition transform hover:bg-opacity-30 hover:backdrop-filter hover:backdrop-blur-lg">
       <Link to={`/${productPath}`} onClick={handleClick} className="block relative group">
       <div className="w-full h-48 flex items-center justify-center overflow-hidden">
-          <img src={image} alt={productName} className="h-full w-full object-contain transition-transform duration-300 transform group-hover:scale-110" />
+          <img src={image[0]} alt={productName} className="h-full w-full object-contain transition-transform duration-300 transform group-hover:scale-110" />
         </div>
       </Link>
       <h2 className="text-sm md:text-xl text-gray-700 font-semibold mt-4 text-center capitalize">{productName}</h2>
