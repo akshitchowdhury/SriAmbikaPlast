@@ -9,32 +9,32 @@ const WhatWeDo = () => {
   const digitalMarktRef = useRef(null)
   const logoDesRef = useRef(null)
 
-  const handleClick = (ref)=>{
-    ref.current.scrollIntoView({ behavior: 'smooth' });
+  const handleClick = ()=>{
+    window.scrollTo({ behavior: 'smooth', top: "0" });
   }
   return (
     <div>
       <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white text-left">Products</h2>
   <ul className="miniServices text-gray-500 dark:text-gray-400 font-medium text-left">
-  <Link to ="/webdesign" onClick={()=> handleClick(webDesRef)}>
+  <Link to ="/products" onClick={ handleClick}>
     <li className="mb-4">
       Suction Hose
     </li>
     </Link>
 
-    <Link to ="/webdev" onClick={()=> handleClick(webDevRef)}>
+    <Link to ="/products" onClick={ handleClick}>
     <li className="mb-4">
       Braided Hose
     </li>
     </Link>
     
-    <Link to ="/appdev" onClick={()=> handleClick(appDevRef)}>
+    <Link to ="/products" onClick={ handleClick}>
     <li className="mb-4">
       Garden and Tubing Hose
     </li>
     </Link>
 
-    <Link to ="/socialmedia" onClick={()=> handleClick(socialMediaRef)}>
+    <Link to ="/products" onClick={ handleClick}>
     <li className="mb-4">
       L.D. Kissan Pipe
     </li>

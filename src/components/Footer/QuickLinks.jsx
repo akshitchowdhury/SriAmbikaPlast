@@ -1,35 +1,31 @@
-import React, { useRef } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 const QuickLinks = () => {
-    const homeRef = useRef(null);
-    const aboutUsRef = useRef(null);
-
-    const productRef = useRef(null);
-    const contactRef = useRef(null);
-    const handleClick = (ref) => {
-        ref.current.scrollIntoView({ behavior: 'smooth' });
+    
+    const handleClick = () => {
+        window.scrollTo({ behavior: 'smooth', top:"0" });
       };
   return (
     <div>
       <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white text-left">Quick Links</h2>
             <ul className="Qlinks text-sm md:text-base text-gray-500 dark:text-gray-400 font-medium text-left">
               <li className="mb-4  ">
-                <Link to="/" onClick={() => handleClick(homeRef)} className="navbar-links">Home</Link>
+                <Link to="/" onClick={ handleClick} className="navbar-links">Home</Link>
               </li>
               <li className="mb-4">
-                <Link to="/about" onClick={() => handleClick(aboutUsRef)} className="navbar-links">About Us</Link>
+                <Link to="/about" onClick={ handleClick} className="navbar-links">About Us</Link>
               </li>
               {/* <li className="mb-4">
-                <Link to="/services" onClick={() => handleClick(servicesRef)} className="navbar-links">Services</Link>
+                <Link to="/services" onClick={ handleClick(servicesRef)} className="navbar-links">Services</Link>
               </li> */}
               {/* <li className="mb-4">
-                <Link to="/portfolio" onClick={() => handleClick(portfolioRef)} className="navbar-links">Portfolio</Link>
+                <Link to="/portfolio" onClick={ handleClick(portfolioRef)} className="navbar-links">Portfolio</Link>
               </li> */}
               <li className="mb-4">
-                <Link to="/products" onClick={() => handleClick(productRef)} className="navbar-links">Products</Link>
+                <Link to="/products" onClick={ handleClick} className="navbar-links">Products</Link>
               </li>
               <li className="mb-4">
-                <Link to="/contact" onClick={() => handleClick(contactRef)} className="navbar-links">Contact Me</Link>
+                <Link to="/contact" onClick={ handleClick} className="navbar-links">Contact Me</Link>
               </li>
             </ul>
 
