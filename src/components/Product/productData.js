@@ -16,6 +16,8 @@ import doubleDecker from '../../assets/products/DoubleDecker.png';
 import SuperForam from '../../assets/products/SuperFoam.png';
 import LineRib from '../../assets/products/32LineRib.png';
 import ptmtConnection from '../../assets/products/32LineRib.png';
+import sinkPipes from '../../assets/products/32LineRib.png';
+
 const productsData = [
   {
     category: "PVC Suction Hose Pipe",
@@ -309,7 +311,24 @@ const productsData = [
       
     ],
   },
-  
+  {
+    category: "Sink/Basin Pipes",
+    subproducts: [
+      {
+        product: {
+          ProductName: "Sink/Basin Pipes",
+          image: sinkPipes,
+          sizeWeight: [
+            { s: '30"', w: "28" },
+            {withCup: '30"'}
+          ],
+          // colors: ["Dark Green, Dark Blue, White, Black"],
+          // rollLength: "30mtr",
+        },
+      },
+      
+    ],
+  },
   
 ];
 
