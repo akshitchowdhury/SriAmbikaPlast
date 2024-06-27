@@ -56,12 +56,12 @@ const handleClick = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };  
 return (
-    <section id="cat" className="cat py-12 bg-gray-100">
+    <section id="cat" className="cat py-12 px-6 bg-gray-100">
       <div className="container-fluid">
         <div className="section-title text-center mb-8">
           <h2 className="text-3xl font-bold">Products at <b className='text-orange-500 font-semibold'>a Glance</b></h2>
-          <span className="block w-32 h-1 bg-orange-500 mx-[400px] -my-4"></span>
-          <span className="block w-32 h-1 bg-orange-500 mx-[826px] my-[12px]"></span>
+          <span className="block w-32 h-1 bg-orange-500 mx-[370px] -my-4"></span>
+          <span className="block w-32 h-1 bg-orange-500 mx-[800px] my-[12px]"></span>
           <span className="block w-32 h-1 bg-orange-500 md:bg-gray-100 md:mx-auto md:my-8"></span>
         </div>
         <Slider {...settings}>
@@ -78,7 +78,7 @@ return (
                     </div>
                   </Link>
                 </div>
-                <h3 className="text-center mt-2">{product.ProductName}</h3>
+                <h3 className="text-center mt-2"></h3>
               </div>
             </div>
           ))}
@@ -108,7 +108,7 @@ const PrevArrow = (props) => {
   return (
     <button
       type="button"
-      className={`${className} slick-prev slick-arrow`}
+      className={`${className} slick-prev slick-arrow `}
       onClick={onClick}
       aria-label="Previous"
       style={{ ...style, display: 'block' }}

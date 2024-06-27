@@ -1,7 +1,7 @@
 .cat_single_box {
     overflow: hidden;
     border: 1px solid #ddd;
-    border-radius: 8px;
+    
     background-color: #fff;
     transition: transform 0.3s ease-in-out;
   }

@@ -16,8 +16,8 @@ function NAv() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }; 
   return (
-    <nav className="bg-orange-600 dark:bg-orange-600 w-full md:h-[100px] z-20 top-0 start-0 relative sticky">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-6">
+    <nav className="bg-orange-600 dark:bg-orange-600 w-full md:h-[70px] z-20 top-0 start-0 relative sticky">
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
         <Link
           to="/" onClick={handleClick}
           className="flex flex-col items-center space-x-2 rtl:space-x-reverse"
