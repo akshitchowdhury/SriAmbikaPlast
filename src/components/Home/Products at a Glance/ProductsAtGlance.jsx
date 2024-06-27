@@ -70,7 +70,7 @@ return (
               <div className="cat_single_box">
                 <div className="img_holder relative">
                   <img src={product.image} alt={product.ProductName} className="w-full h-[40px] object-contain" />
-                  <Link to={`${product.ProductName.replace(/\s+/g, '-').toLowerCase()}`}
+                  <Link to={`/${product.ProductName.toLowerCase().replace(/\s+/g, '-')}`}
                    onClick={handleClick} className="overlay absolute inset-0 
                     flex items-center justify-center ">
                     <div className="text-white text-center">

@@ -10,6 +10,7 @@ import approach from "../../assets/approach.png";
 import CountRise from "./CountRise/CountRise";
 import "./About.css";
 import VisionMission from "./Vison mission/VisionMission";
+import ProductsAtGlance from "../Home/Products at a Glance/ProductsAtGlance";
 
 const About = () => {
   const visionData = [
@@ -56,6 +57,7 @@ const About = () => {
 
   return (
     <>
+    
       <section className="about-section bg-cover bg-center">
         <div className="container mx-auto px-4 py-20 md:py-40">
           <div className="flex flex-col my-[100px] items-start justify-start gap-4 text-start">
