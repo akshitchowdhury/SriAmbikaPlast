@@ -63,7 +63,9 @@ function NAv() {
           </button>
         </div>
         {menuOpen && (
-          <div className="absolute top-full left-0 w-full bg-orange-500 text-white border border-gray-200 md:hidden">
+          <div className="absolute top-full right-0 w-[150px] 
+          opacity-90 ease-in-out duration-300 bg-orange-500 text-white border border-gray-200 md:hidden">
+ 
             <ul className="flex flex-col p-4 md:p-0  font-thin text-sm uppercase">
               <li className="navLinks">
                 <Link

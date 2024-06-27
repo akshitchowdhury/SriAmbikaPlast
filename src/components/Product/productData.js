@@ -15,7 +15,7 @@ import levelTube from '../../assets/products/LevelTube.png';
 import doubleDecker from '../../assets/products/DoubleDecker.png';
 import SuperForam from '../../assets/products/SuperFoam.png';
 import LineRib from '../../assets/products/32LineRib.png';
-
+import ptmtConnection from '../../assets/products/32LineRib.png';
 const productsData = [
   {
     category: "PVC Suction Hose Pipe",
@@ -287,6 +287,30 @@ const productsData = [
       },
     ],
   },
+  {
+    category: "PTMT connection pipes",
+    subproducts: [
+      {
+        product: {
+          ProductName: "PTMT Connection Pipes",
+          image: ptmtConnection,
+          sizeWeight: [
+            { s: '12"', w: "1" },
+            { s: '18"', w: "1.5" },
+            { s: '24"', w: "2" },
+            { s: '30"', w: "2.5" },
+            { s: '36"', w: "3" },
+            { s: '48"', w: "4" }
+          ],
+          // colors: ["Dark Green, Dark Blue, White, Black"],
+          rollLength: "30mtr",
+        },
+      },
+      
+    ],
+  },
+  
+  
 ];
 
 export default productsData;

@@ -1,3 +1,5 @@
+import { faEnvelope, faMapMarkerAlt, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 
 const AdressBlock = () => {
@@ -7,12 +9,20 @@ const AdressBlock = () => {
         Address
       </h2>
       <p className="text-white font-medium mb-4">
-        No.20, 15th Cross, Malagala Main Road, Nagarabhavi 2nd Stage, Bengaluru-560091
+      <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2 text-white" />
+      <span> No.20, 15th Cross, Malagala Main Road, Nagarabhavi 2nd Stage, Bengaluru-560091</span>
       </p>
       <p className="text-white text-sm font-medium">
+      <FontAwesomeIcon icon={faPhone} className="mr-2 text-white" />
+      <span>
         Phone: +91 9448539183 / +91 9845511324
+        </span>
         <br />
+        <br />
+        <FontAwesomeIcon icon={faEnvelope} className="mr-2 text-white" />
+      <span>
         Email: seraramsolanki@gmail.com
+        </span>
       </p>
     </div>
   );

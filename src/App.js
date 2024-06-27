@@ -26,6 +26,7 @@ import SuperLineRib from './components/Product/ProductStack/SuperLineRib';
 import LevelTube from './components/Product/ProductStack/LevelTube';
 import ColorLDPipes from './components/Product/ProductStack/LD HOse Tube/ColorLDPipes';
 import WhiteTransparent from './components/Product/ProductStack/LD HOse Tube/WhiteTransparent';
+import PtmtSinkPipes from './components/Product/ProductStack/PTMT/PtmtSinkPipes';
 
 
 
@@ -72,6 +73,7 @@ function App() {
           <Route path="/level-tube" element={<LevelTube/>} />
           <Route path="/color-l.d.-pipes" element={<ColorLDPipes/>} />
           <Route path="/white-transparent" element={<WhiteTransparent/>} />
+          <Route path="/ptmt-connection-pipes" element={<PtmtSinkPipes/>} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />

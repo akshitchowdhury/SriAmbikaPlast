@@ -12,7 +12,7 @@
   }
   .navbar-links:hover{
 
-    color: rgb(226, 114, 23)
+    color: rgb(19, 19, 19)
   }
   .Qlinks li::after {
     content: '';
@@ -43,7 +43,7 @@
 }
 
 .miniServices li:hover {
-  color: rgb(226, 114, 23);
+  color: rgb(10, 10, 10);
 }
 
 
