@@ -7,7 +7,9 @@ import { Link } from 'react-router-dom';
 import WhatsApp from './Whatsapp';
 import ProductHero from './Product Hero Section/ProductHero';
 import ProductsAtGlance from '../Home/Products at a Glance/ProductsAtGlance';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 const ProductCard = ({ productName, image }) => {
   const productPath = productName.toLowerCase().replace(/\s+/g, '-');
   const handleClick = () => {
@@ -55,7 +57,7 @@ const Products = () => {
   return (
     <>
       <ProductsAtGlance />
-      <div className="mb-8 my-12 flex justify-center">
+      <div className="mb-8 my-12 flex justify-center " data-aos="fade-up">
         <input
           type="text"
           placeholder="Search products by name or category"
@@ -64,9 +66,9 @@ const Products = () => {
           onChange={handleSearchChange}
         />
       </div>
-      <div className="container mx-auto px-4 py-8">
+      <div className="container mx-auto px-4 py-8" data-aos="fade-up">
         {filteredProducts.map((categoryData, index) => (
-          <div key={index} className="mb-12">
+          <div key={index} className="mb-12" data-aos="fade-up">
             <h1 className="text-2xl md:text-4xl font-semibold mb-6">{categoryData.category}</h1>
             <div className={`grid grid-cols-1  md:grid-cols-3 lg:grid-cols-${categoryData.subproducts.length < 3 ? '2' : '3'} gap-6`}>
               {categoryData.subproducts.map((subproduct, subIndex) => {

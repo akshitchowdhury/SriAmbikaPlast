@@ -3,6 +3,9 @@ import resistantWeather from '../../../assets/resitantToWeather.png'
 import uniqueEye from '../../../assets/uniqueEye.png'
 import qltyAssure from '../../../assets/qualityAssurance.png'
 import safepacking from '../../../assets/safePacking.png'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 const FeaturesSection = () => {
   const features = [
     {
@@ -24,7 +27,7 @@ const FeaturesSection = () => {
   ];
 
   return (
-    <section id="fact" className="py-12 bg-gray-100">
+    <section id="fact" className="py-12 bg-gray-100" data-aos="fade-up">
       <div className="container mx-auto px-4">
         <div className="text-center mb-8">
           <h2 className="text-3xl font-bold">Features to decide <b className='text-orange-600 font-semibold'>the right Product</b></h2>

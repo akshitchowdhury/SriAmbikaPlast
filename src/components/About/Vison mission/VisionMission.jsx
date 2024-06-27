@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import vision from '../../../assets/vision.png';
 import mission from '../../../assets/mission.png';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 const VisionMission = () => {
   // Initialize state for background colors
   const [visionBgColor, setVisionBgColor] = useState('bg-white');
@@ -32,7 +34,8 @@ const VisionMission = () => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center p-6 md:p-14 space-y-10 md:space-y-0 md:space-x-10">
+    <div
+    data-aos="fade-up" className="flex flex-col md:flex-row items-center justify-center p-6 md:p-14 space-y-10 md:space-y-0 md:space-x-10">
       {/* Vision Section */}
       <div
         className={`flex flex-col items-center ${visionBgColor} p-6 md:p-10 rounded-md shadow-md w-full md:w-1/2 space-y-6 transition-colors duration-300`}

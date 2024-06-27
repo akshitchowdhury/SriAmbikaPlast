@@ -1,9 +1,12 @@
 import React from "react";
 import whatWeOffer from "../../../assets/products/group.png";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 const WhatWeOffer = () => {
   return (
     <>
-      <section className="py-8 px-4 md:py-16 md:px-8 bg-gray-100">
+      <section className="py-8 px-4 md:py-16 md:px-8 bg-gray-100" data-aos="fade-up">
         <h1 className="text-left font-semibold text-4xl  py-4">
           What We Offfer
         </h1>

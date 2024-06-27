@@ -11,7 +11,9 @@ import CountRise from "./CountRise/CountRise";
 import "./About.css";
 import VisionMission from "./Vison mission/VisionMission";
 import ProductsAtGlance from "../Home/Products at a Glance/ProductsAtGlance";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 const About = () => {
   const visionData = [
     {
@@ -60,7 +62,7 @@ const About = () => {
     
       <section className="about-section bg-cover bg-center">
         <div className="container mx-auto px-4 py-20 md:py-40">
-          <div className="flex flex-col my-[100px] items-start justify-start gap-4 text-start">
+          <div className="flex flex-col my-[100px] items-start justify-start gap-4 text-start "data-aos="fade-up">
             <h1 className="text-3xl font-bold text-white md:text-5xl">
               About Us
             </h1>
@@ -84,10 +86,10 @@ const About = () => {
               />
             </div>
 
-            <div className="flex flex-col  w-full md:w-full ">
+            <div className="flex flex-col  w-full md:w-full "data-aos="fade-up">
               <div className="text-justify mb-8">
                 <h1 className="text-3xl font-bold text-gray-800">Who We Are</h1>
-                Sree Ambika Plast is an ISO 9001-2015 certified company based in
+                Shri Ambika Plast is an ISO 9001-2015 certified company based in
                 Karnataka, specializing in the manufacturing of agricultural pipes
                 for irrigation and delivery pipes for home and construction use.
                 Established in 2005, we aim to provide innovative and superior

@@ -9,17 +9,19 @@ import WhatWeOffer from "./What We Offer/WhatWeOffer";
 import Product from "../Product/Product";
 import FeaturesSection from "./Features Section/FeaturesSection";
 import ProductsAtGlance from "./Products at a Glance/ProductsAtGlance";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 const Home = () => {
   const handleClick = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
   return (
     <>
-      <div className="home h-[900px] md:h-[100vh]">
+      <div className="home h-[900px] md:h-[100vh] ">
         
       </div>
-      <div
+      <div data-aos="fade-up"
           className="container absolute top-12 md:labsolute md:top-0 lg:absolute lg:top-24
        mx-auto px-4 py-8 flex flex-col md:flex-row items-center justify-center gap-8"
         >
@@ -71,8 +73,8 @@ const Home = () => {
           
           <HomeContact />
         </div>
-        <ProductsAtGlance/>
-        <FeaturesSection/>
+        <ProductsAtGlance />
+        <FeaturesSection />
       <WhatWeOffer />
       <WhyUs />
     </>
