@@ -453,7 +453,7 @@ const productsData = [
       {
         product: {
           ProductName: "Color Transparent (C.T.T)",
-          image: [ctt],
+          image: [ctt,colorLDpipes ],
           sizeWeight: [
             { s: '1/2"', w: "2.5" },
             { s: '3/4"', w: "3.5" },
