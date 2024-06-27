@@ -47,28 +47,24 @@ const SinkBasinPipes = () => {
             </div>
             <div className="md:ml-6 w-full md:w-1/2">
               <div className="overflow-x-auto mb-6">
-                <table className="min-w-full bg-white border border-gray-300">
+              <table className="min-w-full bg-white border border-gray-300">
                   <thead>
                     <tr>
-                      <th className="py-3 px-5 bg-orange-600 text-white font-bold uppercase text-lg border-b border-gray-300">
-                        Size
-                      </th>
-                      <th className="py-3 px-5 bg-orange-600 text-white font-bold uppercase text-lg border-b border-gray-300">
-                        Weight
-                      </th>
+                      <th className="py-3 px-5 bg-orange-600 text-white font-bold uppercase text-lg border-b border-gray-300">Without Cup</th>
+                      <th className="py-3 px-5 bg-orange-600 text-white font-bold uppercase text-lg border-b border-gray-300">With Cup</th>
                     </tr>
                   </thead>
                   <tbody>
-                    {product.sizeWeight.map((item, index) => (
-                      <tr key={index} className="even:bg-orange-200">
-                        <td className="py-3 px-5 text-gray-700 text-center font-semibold text-lg border-r border-gray-300">
-                          {item.s}
-                        </td>
-                        <td className="py-3 px-5 text-gray-700 text-center font-semibold text-lg">
-                          {item.w}
-                        </td>
-                      </tr>
-                    ))}
+                    <tr className="even:bg-orange-200">
+                    <td className="py-3 px-5 text-gray-700 text-center font-semibold text-lg border-r border-gray-300">
+                        
+                        {product.sizeWeight.filter(item => !item.withCup).map(item => `${item.s} ${item.w}`).join(', ')}
+                      </td>
+                      <td className="py-3 px-5 text-gray-700 text-center font-semibold text-lg border-r border-gray-300">
+                        
+                        {product.sizeWeight.filter(item => item.withCup).map(item => `${item.withCup}`).join(', ')}
+                      </td>
+                    </tr>
                   </tbody>
                 </table>
               </div>

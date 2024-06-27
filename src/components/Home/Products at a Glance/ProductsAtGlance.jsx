@@ -69,7 +69,7 @@ return (
             <div key={index} className="px-4">
               <div className="cat_single_box">
                 <div className="img_holder relative">
-                  <img src={product.image} alt={product.ProductName} className="w-full h-[40px] object-contain" />
+                  <img src={product.image[0]} alt={product.ProductName} className="w-full h-[40px] object-contain" />
                   <Link to={`/${product.ProductName.toLowerCase().replace(/\s+/g, '-')}`}
                    onClick={handleClick} className="overlay absolute inset-0 
                     flex items-center justify-center ">
