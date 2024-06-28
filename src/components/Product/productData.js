@@ -352,7 +352,8 @@ const productsData = [
     subproducts: [
       {
         product: {
-          ProductName: ["Sink/Basin Pipes","Suction Hose", "Braided Hose", "Tubing Hose"],
+          ProductName: "Sink/Basin Pipes",
+          ProductArrs: ["Sink/Basin Pipes","Suction Hose", "Braided Hose", "Tubing Hose"],
           image: [sinkPipes,suctionHose,sinkPipes4,gardentTubing],
           sizeWeight: [
             { s: '30"', w: "28" },

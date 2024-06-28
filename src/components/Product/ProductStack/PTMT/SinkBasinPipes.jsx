@@ -39,7 +39,7 @@ const SinkBasinPipes = () => {
                       className="w-full h-[200px] object-contain"
                     />
                     <h1 className="text-2xl font-bold text-orange-600 mt-4 text-center">
-                {product.ProductName[index]}
+                {product.ProductArrs[index]}
               </h1>
                   </div>
                 ))}
