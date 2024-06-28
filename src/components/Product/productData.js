@@ -1,12 +1,13 @@
 import flexSuction from '../../assets/products/FlexSuction.png';
-import flexSuctionBlack from '../../assets/products/Flex Suction/FlexSuctionBlack.png';
+import plainBlack from '../../assets/products/Flex Suction/FlexSuctionBlack.png';
 import flexSuctionGreen from '../../assets/products/Flex Suction/FlexSuctionGreen.png';
 import superFlexSuction from '../../assets/products/superFlexSuction.png';
 import superFlexSuction1 from '../../assets/products/Super Suction/superSuction1.png';
-import superFlexSuction2 from '../../assets/products/Super Suction/superSuction2.png';
+import superFlexSuction2 from '../../assets/products/Super Suction/suoersuctionCross.png';
 
 import topLonBraided1 from '../../assets/products/Top Lon Braidedd/braided1.png';
 import topLonBraided2 from '../../assets/products/Top Lon Braidedd/braided2.png';
+import topLonBraided3 from '../../assets/products/Top Lon Braidedd/topLon2.png';
 
 import goodLonBraided from '../../assets/products/Good Lon Braided/goodLon1.png';
 import goodLonBraided1 from '../../assets/products/Good Lon Braided/goodLon2.png';
@@ -24,6 +25,7 @@ import colorZebra from '../../assets/products/ColorZebra.png';
 import colorZebra1 from '../../assets/products/Color Zebra/colorZebra1.png';
 import colorZebra2 from '../../assets/products/Color Zebra/colorZebra2.png';
 import WhiteTT from '../../assets/products/WhiteTT.png';
+import WhiteTT2 from '../../assets/products/whiteTT2.png';
 import opek from '../../assets/products/Opek.png';
 import opek1 from '../../assets/products/Opek/opek1.png';
 import opek2 from '../../assets/products/Opek/opek2.png';
@@ -37,6 +39,7 @@ import doubleDecker from '../../assets/products/DoubleDecker.png';
 
 import superFoamOne from '../../assets/products/Super Foam/superFoamOne.png';
 import superFoamTwo from '../../assets/products/Super Foam/superFoamTwo.png';
+import foam2 from '../../assets/products/Super Foam/foam2.png';
 import superFoamThree from '../../assets/products/Super Foam/superFoamThree.png';
 
 import LineRib2 from '../../assets/products/Line Rib/32one.png';
@@ -54,7 +57,7 @@ const productsData = [
       {
         product: {
           ProductName: "Flex Suction",
-          image: [flexSuction,flexSuctionBlack,flexSuctionGreen],
+          image: [flexSuction,flexSuctionGreen],
           sizeWeight: [
             { s: '3/4"', w: "4.5" },
             { s: '1"', w: "5.5" },
@@ -99,7 +102,7 @@ const productsData = [
       {
         product: {
           ProductName: "Top Lon Braided",
-          image: [topLonBraided2,topLonBraided1],
+          image: [topLonBraided2,topLonBraided1,topLonBraided3],
           sizeWeight: [
             { s: '1/2"', w: "3.5" },
             { s: '3/4"', w: "5.2" },
@@ -112,7 +115,7 @@ const productsData = [
       {
         product: {
           ProductName: "Good Lon Braided",
-          image: [goodLonBraided1,goodLonBraided2,goodLonBraided],
+          image: [goodLonBraided,goodLonBraided2,goodLonBraided1],
           sizeWeight: [
             { s: '8MM', w: "11", sMtr: "100" },
             { s: '10MM', w: "14", sMtr: "100" },
@@ -187,7 +190,7 @@ const productsData = [
       {
         product: {
           ProductName: "White T.T",
-          image: [WhiteTT],
+          image: [WhiteTT,WhiteTT2],
           sizeWeight: [
             { s: '1/2"', w: "3" },
             { s: '3/4"', w: "4.5" },
@@ -200,27 +203,13 @@ const productsData = [
       {
         product: {
           ProductName: "Metallic",
-          image: [metallic],
+          image: [metallic,metallic],
           sizeWeight: [
             { s: '1/2"', w: "3" },
             { s: '3/4"', w: "4.5" },
             { s: '1"', w: "7.5" }
           ],
           colors: ["Yellow, Orange, Parrot Green, Pink"],
-          //   colors: ["green", "blue", "orange"],
-          rollLength: "30mtr",
-        },
-      },
-      {
-        product: {
-          ProductName: "Black Zebra",
-          image: [blackZebra],
-          sizeWeight: [
-            { s: '1/2"', w: "3.5" },
-            { s: '3/4"', w: "5" },
-            { s: '1"', w: "8" }
-          ],
-          colors: ["Parrot Green , Yellow, Blue, White, Orange, Pink"],
           //   colors: ["green", "blue", "orange"],
           rollLength: "30mtr",
         },
@@ -242,7 +231,7 @@ const productsData = [
       {
         product: {
           ProductName: "Super Foam",
-          image: [superFoamTwo, superFoamOne,superFoamThree],
+          image: [superFoamTwo, superFoamOne,foam2],
           sizeWeight: [
             { s: '1/2"', w: "3.5" },
             { s: '3/4"', w: "5" },
@@ -275,6 +264,20 @@ const productsData = [
             { s: '8MM', w: "1KG" },
             { s: '10MM', w: "1.5KG" }
           ],
+          //   colors: ["green", "blue", "orange"],
+          rollLength: "30mtr",
+        },
+      },
+      {
+        product: {
+          ProductName: "Plain Black",
+          image: [plainBlack,plainBlack],
+          sizeWeight: [
+            { s: '1/2"', w: "3.5" },
+            { s: '3/4"', w: "5" },
+            { s: '1"', w: "8" }
+          ],
+          colors: ["black"],
           //   colors: ["green", "blue", "orange"],
           rollLength: "30mtr",
         },

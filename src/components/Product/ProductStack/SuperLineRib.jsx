@@ -8,7 +8,7 @@ import wearResistant from "../../../assets/products/wearResistant.webp";
 import ecoFriendly from "../../../assets/products/ecoFriendly.jpg";
 import vibrantColors from "../../../assets/products/vibrantColors.png";
 const SuperLineRib = () => {
-  const product = productsData[2].subproducts[9].product;
+  const product = productsData[2].subproducts[8].product;
 
   const settings = {
     dots: false,

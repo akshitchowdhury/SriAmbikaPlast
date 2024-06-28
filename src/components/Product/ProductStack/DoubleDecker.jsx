@@ -9,7 +9,7 @@ import wearResistant from "../../../assets/products/wearResistant.webp";
 import ecoFriendly from "../../../assets/products/ecoFriendly.jpg";
 import vibrantColors from "../../../assets/products/vibrantColors.png";
 const DoubleDecker = () => {
-  const product = productsData[2].subproducts[7].product;
+  const product = productsData[2].subproducts[6].product;
 
   const settings = {
     dots: false,

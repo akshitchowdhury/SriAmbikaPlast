@@ -28,6 +28,7 @@ import ColorLDPipes from './components/Product/ProductStack/LD HOse Tube/ColorLD
 import WhiteTransparent from './components/Product/ProductStack/LD HOse Tube/WhiteTransparent';
 import PtmtSinkPipes from './components/Product/ProductStack/PTMT/PtmtSinkPipes';
 import SinkBasinPipes from './components/Product/ProductStack/PTMT/SinkBasinPipes';
+import PlainBlack from './components/Product/ProductStack/PlainBlack';
 
 
 
@@ -68,6 +69,7 @@ function App() {
           <Route path="/white-t.t" element={<WhiteTT />} />
           <Route path="/metallic" element={<Metallic />} />
           <Route path="/black-zebra" element={<BlackZebra />} />
+          <Route path="/plain-black" element={<PlainBlack/>} />
           <Route path="/double-decker" element={<DoubleDecker/>} />
           <Route path="/super-foam" element={<SuperFoam/>} />
           <Route path="/super-32-line-rib" element={<SuperLineRib/>} />

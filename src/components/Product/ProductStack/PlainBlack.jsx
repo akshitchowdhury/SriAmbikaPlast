@@ -1,14 +1,15 @@
-import React from 'react';
-import productsData from '../productData'; 
+import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import productsData from "../productData";
 import durable from "../../../assets/products/strongDurable.png";
 import wearResistant from "../../../assets/products/wearResistant.webp";
 import ecoFriendly from "../../../assets/products/ecoFriendly.jpg";
 import vibrantColors from "../../../assets/products/vibrantColors.png";
-const SuperFoam = () => {
-  const product = productsData[2].subproducts[7].product;
+
+const PlainBlack = () => {
+  const product = productsData[2].subproducts[10].product;
 
   const settings = {
     dots: false,
@@ -26,7 +27,7 @@ const SuperFoam = () => {
     <div className="min-h-screen flex flex-col items-center justify-center p-4 bg-gray-100">
       <div className="bg-white rounded-lg shadow-lg overflow-hidden max-w-6xl w-full p-8">
         <p className="text-2xl font-semibold text-white bg-orange-600 w-full p-4 text-center">
-          SHRI ANCHAR ROYAL FLEX (Colors: {product.colors.join(", ")})
+          SHRI ANCHAR ROYAL FLEX 
         </p>
         <div className="flex flex-col md:flex-row items-start mt-6">
           <div className="w-full md:w-1/2 lg:w-[500px] lg:h-[500px] h-auto object-cover rounded mb-6 md:mb-0">
@@ -36,7 +37,7 @@ const SuperFoam = () => {
                   <img
                     src={imgSrc}
                     alt={`${product.ProductName} ${index + 1}`}
-                    className="w-full h-[300px] object-contain rounded"
+                    className="w-full h-auto object-cover rounded"
                   />
                 </div>
               ))}
@@ -153,7 +154,6 @@ const PrevArrow = (props) => {
       Previous
     </button>
   );
+};
 
-}
-
-export default SuperFoam;
+export default PlainBlack;
