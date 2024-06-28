@@ -49,6 +49,8 @@ import ptmtConnection from '../../assets/products/PMT/PMT1.png';
 import ptmtConnection1 from '../../assets/products/PMT/PMT2.png';
 import sinkPipes from '../../assets/products/Sink pipe/sinkPipe1.png';
 import sinkPipes2 from '../../assets/products/Sink pipe/sinkPipe2.png';
+import sinkPipes3 from '../../assets/products/Sink pipe/sinkPipe3.png';
+import sinkPipes4 from '../../assets/products/Sink pipe/sinkPipe4.png';
 
 const productsData = [
   {
@@ -348,7 +350,7 @@ const productsData = [
       {
         product: {
           ProductName: "Sink/Basin Pipes",
-          image: [sinkPipes,sinkPipes2],
+          image: [sinkPipes,sinkPipes2,sinkPipes3,sinkPipes4],
           sizeWeight: [
             { s: '30"', w: "28" },
             {withCup: '30"'}

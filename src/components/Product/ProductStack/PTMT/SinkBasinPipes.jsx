@@ -36,7 +36,7 @@ const SinkBasinPipes = () => {
                     <img
                       src={imgSrc}
                       alt={`${product.ProductName} ${index + 1}`}
-                      className="w-full h-auto object-cover rounded"
+                      className="w-full h-[200px] object-contain"
                     />
                   </div>
                 ))}
