@@ -63,7 +63,7 @@ const About = () => {
       <section className="about-section bg-cover bg-center bg-orange-600">
         <div className="container mx-auto px-4 py-20 md:py-40 ">
           <div className="flex flex-col  items-start justify-start gap-4 text-start "data-aos="fade-up">
-            <h1 className="text-3xl font-bold text-black md:text-5xl">
+            <h1 className="text-3xl font-bold text-white md:text-5xl">
               About Us
             </h1>
             <p className="text-xl font-semibold text-gray-300 md:text-2xl">
