@@ -214,7 +214,7 @@ const productsData = [
       {
         product: {
           ProductName: "Black Zebra",
-          image: [blackZebra, whiteLDpipes, colorLDpipes],
+          image: [blackZebra],
           sizeWeight: [
             { s: '1/2"', w: "3.5" },
             { s: '3/4"', w: "5" },
