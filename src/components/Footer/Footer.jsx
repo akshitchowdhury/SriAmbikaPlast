@@ -8,7 +8,7 @@ import WhatWeDo from "./WhatWeDo";
 import ImportantLinks from "./ImportantLinks";
 import AdressBlock from "./AdressBlock";
 import "./Footer.css";
-
+import footerLogo from "../../assets/logo2.png"
 const Footer = () => {
   const handleClick = () => {
     const url = generateLink({ phone: 9448539183, message: "Welcome to Shri Ambika Plast...Feel free to connect with us" });
@@ -19,6 +19,10 @@ const Footer = () => {
     <footer className="footer overflow-clip bg-orange-600 text-white">
       <div className="footerBlock1 mx-auto w-full max-w-screen-xl py-12">
         <div className="grid grid-cols-2 gap-8 px-4 lg:grid-cols-4">
+          {/* <div className="md:col-span-1">
+          
+            
+          </div> */}
           <div className="md:col-span-1">
           <AdressBlock />
             
@@ -46,6 +50,9 @@ const Footer = () => {
       ></iframe>
       </div>
         </div>
+        <br/>
+        <br/>
+      <img src={footerLogo} className="h-[170px]  -my-[90px] mx-[70px] md:mx-[500px]" alt="Flowbite Logo" />
       </div>
       <div className="bg-gray-100 text-gray-800 py-4 md:flex md:items-center md:justify-between">
         <span className="text-sm sm:text-center">

@@ -1,10 +1,12 @@
 import { faEnvelope, faMapMarkerAlt, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
-
+import footerLogo from "../../assets/logo2.png"
 const AdressBlock = () => {
   return (
+    <>
     <div className="address md:col-span-1 mb-6 md:mb-0 md:mr-4 text-left">
+    
       <h2 className="mb-6 text-sm font-semibold text-white uppercase">
         Address
       </h2>
@@ -25,6 +27,9 @@ const AdressBlock = () => {
         </span>
       </p>
     </div>
+    
+    
+    </>
   );
 };
 
