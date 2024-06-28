@@ -1,5 +1,5 @@
 import React from "react";
-import whyUs from "../../../assets/whyUs.webp"
+import whyUs from "../../../assets/whyUs.png"
 const WhyUs = () => {
   return (
     <section className="py-8 px-4 md:py-16 md:px-20 bg-gray-100">
@@ -40,7 +40,7 @@ const WhyUs = () => {
           <img
             src={whyUs}
             alt="Ship"
-            className="max-w-full h-auto"
+            className="max-w-full h-[400px] md:h-full"
           />
         </div>
       </div>

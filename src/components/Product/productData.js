@@ -63,7 +63,7 @@ const productsData = [
       {
         product: {
           ProductName: "Flex Suction",
-          image: [flexSuction,flexSuctionGreen,flexCross1,flexCross2],
+          image: [flexSuction,flexSuctionGreen,flexCross2],
           sizeWeight: [
             { s: '3/4"', w: "4.5" },
             { s: '1"', w: "5.5" },
@@ -264,7 +264,7 @@ const productsData = [
       {
         product: {
           ProductName: "Level Tube",
-          image: [levelTube],
+          image: [levelTube,levelTube],
           sizeWeight: [
             { s: '6MM', w: "700GM, 1KG" },
             { s: '8MM', w: "1KG" },
