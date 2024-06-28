@@ -4,6 +4,7 @@ import flexSuctionGreen from '../../assets/products/Flex Suction/FlexSuctionGree
 import superFlexSuction from '../../assets/products/superFlexSuction.png';
 import superFlexSuction1 from '../../assets/products/Super Suction/superSuction1.png';
 import superFlexSuction2 from '../../assets/products/Super Suction/suoersuctionCross.png';
+import graySuction from '../../assets/products/Super Suction/WhatsApp Image 2024-06-28 at 2.23.39 PM-Photoroom.png';
 
 import topLonBraided1 from '../../assets/products/Top Lon Braidedd/braided1.png';
 import topLonBraided2 from '../../assets/products/Top Lon Braidedd/braided2.png';
@@ -82,7 +83,7 @@ const productsData = [
       {
         product: {
           ProductName: "Super Flex Suction",
-          image: [superFlexSuction,superFlexSuction1,superFlexSuction2],
+          image: [superFlexSuction,superFlexSuction1,superFlexSuction2,graySuction],
           sizeWeight: [
             { s: '3/4"', w: "5.5" },
             { s: '1"', w: "6-7" },
