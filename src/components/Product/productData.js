@@ -1,6 +1,8 @@
 import flexSuction from '../../assets/products/FlexSuction.png';
 import plainBlack from '../../assets/products/Flex Suction/FlexSuctionBlack.png';
 import flexSuctionGreen from '../../assets/products/Flex Suction/FlexSuctionGreen.png';
+import flexCross1 from '../../assets/products/Flex Suction/flexCross1.png';
+import flexCross2 from '../../assets/products/Flex Suction/flexCross2.png';
 import superFlexSuction from '../../assets/products/superFlexSuction.png';
 import superFlexSuction1 from '../../assets/products/Super Suction/superSuction1.png';
 import superFlexSuction2 from '../../assets/products/Super Suction/suoersuctionCross.png';
@@ -49,13 +51,11 @@ import LineRib from '../../assets/products/32LineRib.png';
 import ptmtConnection from '../../assets/products/PMT/PMT1.png';
 import ptmtConnection1 from '../../assets/products/PMT/PMT2.png';
 import sinkPipes from '../../assets/products/Sink pipe/sinkPipe1.png';
-import sinkPipes2 from '../../assets/products/Sink pipe/sinkPipe2.png';
-import sinkPipes3 from '../../assets/products/Sink pipe/sinkPipe3.png';
-import sinkPipes4 from '../../assets/products/Sink pipe/sinkPipe4.png';
+import braided from '../../assets/products/Sink pipe/braided.png';
+import tubing from '../../assets/products/Sink pipe/tubing.png';
 
-import suctionHose from "../../assets/products/Sink pipe/suctionHose.png";
-import coloBraidede from "../../assets/products/Sink pipe/coloBraidede.png";
-import gardentTubing from "../../assets/products/Sink pipe/gardenTubing.png";
+
+
 const productsData = [
   {
     category: "PVC Suction Hose Pipe",
@@ -63,7 +63,7 @@ const productsData = [
       {
         product: {
           ProductName: "Flex Suction",
-          image: [flexSuction,flexSuctionGreen],
+          image: [flexSuction,flexSuctionGreen,flexCross1,flexCross2],
           sizeWeight: [
             { s: '3/4"', w: "4.5" },
             { s: '1"', w: "5.5" },
@@ -288,6 +288,20 @@ const productsData = [
           rollLength: "30mtr",
         },
       },
+      {
+        product: {
+          ProductName: "Black Zebra",
+          image: [blackZebra,blackZebra],
+          sizeWeight: [
+            { s: '1/2"', w: "3.5" },
+            { s: '3/4"', w: "5" },
+            { s: '1"', w: "8" }
+          ],
+          colors: ["black"],
+          //   colors: ["green", "blue", "orange"],
+          rollLength: "30mtr",
+        },
+      },
     ],
   },
   {
@@ -354,8 +368,8 @@ const productsData = [
       {
         product: {
           ProductName: "Sink/Basin Pipes",
-          ProductArrs: ["Sink/Basin Pipes","Suction Hose", "Braided Hose", "Tubing Hose"],
-          image: [sinkPipes,suctionHose,sinkPipes4,gardentTubing],
+          ProductArrs: ["Suction Sink/Basin Pipe", "Braided Sink/Basin Pipe", "Tubing Sink/Basin Pipe"],
+          image: [sinkPipes,braided,tubing],
           sizeWeight: [
             { s: '30"', w: "28" },
             {withCup: '30"'}

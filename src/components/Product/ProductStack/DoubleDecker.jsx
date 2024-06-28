@@ -8,6 +8,8 @@ import durable from "../../../assets/products/strongDurable.png";
 import wearResistant from "../../../assets/products/wearResistant.webp";
 import ecoFriendly from "../../../assets/products/ecoFriendly.jpg";
 import vibrantColors from "../../../assets/products/vibrantColors.png";
+import doubleDecker from "../../../assets/products/DoubleDecker.png";
+
 const DoubleDecker = () => {
   const product = productsData[2].subproducts[6].product;
 
@@ -31,17 +33,13 @@ const DoubleDecker = () => {
         </p>
         <div className="flex flex-col md:flex-row items-start mt-6">
           <div className="w-full md:w-1/2 lg:w-[500px] lg:h-[500px] h-auto object-cover rounded mb-6 md:mb-0">
-            <Slider {...settings}>
-              {product.image.map((imgSrc, index) => (
-                <div key={index}>
+            <div>
                   <img
-                    src={imgSrc}
-                    alt={`${product.ProductName} ${index + 1}`}
-                    className="w-full h-auto object-cover rounded"
+                    src={doubleDecker}
+                    className="w-full h-[300px] object-contain rounded"
                   />
                 </div>
-              ))}
-            </Slider>
+            
             <h1 className="text-2xl font-bold text-orange-600 mt-4 text-center">
               {product.ProductName}
             </h1>

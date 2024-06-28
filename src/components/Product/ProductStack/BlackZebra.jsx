@@ -9,7 +9,7 @@ import ecoFriendly from "../../../assets/products/ecoFriendly.jpg";
 import vibrantColors from "../../../assets/products/vibrantColors.png";
 
 const BlackZebra = () => {
-  const product = productsData[2].subproducts[6].product;
+  const product = productsData[2].subproducts[11].product;
 
   const settings = {
     dots: false,
