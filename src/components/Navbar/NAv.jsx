@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-// import logo from "../../assets/innomatric_logo_only.png";
+import logo from "../../assets/logo2.png";
 // import "./NAv.css";
 // import { Dropdown } from "flowbite-react";
 import ServiceHover from "./ServiceHover";
@@ -17,15 +17,14 @@ function NAv() {
   }; 
   return (
     <nav className="bg-orange-600 dark:bg-orange-600 w-full md:h-[70px] z-20 top-0 start-0 relative sticky">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto ">
         <Link
           to="/" onClick={handleClick}
-          className="flex flex-col items-center space-x-2 rtl:space-x-reverse"
+          className="flex flex-col -my-12 items-center space-x-2 rtl:space-x-reverse"
         >
-          {/* <img src={logo} className="h-24" alt="Flowbite Logo" /> */}
+            <img src={logo} className="h-[170px]" alt="Flowbite Logo" />
 
-          {/* <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span> */}
-        </Link>
+          </Link>
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
           <Link to="/contact" onClick={handleClick}>
             {" "}
