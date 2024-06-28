@@ -16,7 +16,8 @@ const ProductCard = ({ productName, image }) => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
   return (
-    <div className="relative bg-white shadow-lg border border-gray-200 rounded-none overflow-hidden m-4 p-4 w-[260px] lg:w-full 
+    <div className="relative bg-white shadow-lg border border-gray-200 
+    rounded-none overflow-hidden m-4 p-4 w-[260px] lg:w-full  
     transition transform hover:bg-opacity-30 hover:backdrop-filter hover:backdrop-blur-lg">
       <Link to={`/${productPath}`} onClick={handleClick} className="block relative group">
       <div className="w-full h-48 flex items-center justify-center overflow-hidden">
@@ -70,7 +71,8 @@ const Products = () => {
         {filteredProducts.map((categoryData, index) => (
           <div key={index} className="mb-12" data-aos="fade-up">
             <h1 className="text-2xl md:text-4xl font-semibold mb-6">{categoryData.category}</h1>
-            <div className={`grid grid-cols-1  md:grid-cols-3 lg:grid-cols-${categoryData.subproducts.length < 3 ? '2' : '3'} gap-6`}>
+            <div className={`grid grid-cols-1  md:grid-cols-3 lg:grid-cols-${categoryData.subproducts.length < 3 ? '2' : '3'}
+            mx-[40px] lg:mx-0 gap-6`}>
               {categoryData.subproducts.map((subproduct, subIndex) => {
                 const { ProductName, image } = subproduct.product;
                 return (
