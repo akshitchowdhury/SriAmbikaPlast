@@ -304,7 +304,7 @@ const productsData = [
             { s: '5"', w: "25" },
             { s: '6"', w: "30" }
           ],
-          colors: ["Dark Green, Dark Blue, White, Black"],
+          colors: ["Dark Green, B.J.P and Lemon Yellow, Dark Blue, White, Black"],
           rollLength: "30mtr",
         },
       },
