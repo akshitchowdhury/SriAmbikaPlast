@@ -9,7 +9,7 @@ import ecoFriendly from "../../../../assets/products/ecoFriendly.jpg";
 import vibrantColors from "../../../../assets/products/vibrantColors.png";
 import suctionHose from "../../../../assets/products/Sink pipe/suctionHose.png";
 import coloBraidede from "../../../../assets/products/Sink pipe/coloBraidede.png";
-import gardenTubing from "../../../../assets/products/Sink pipe/gardenTubing.png";
+import gardentTubing from "../../../../assets/products/Sink pipe/gardenTubing.png";
 const SinkBasinPipes = () => {
     const product = productsData[5].subproducts[0].product;
 
@@ -127,17 +127,13 @@ const SinkBasinPipes = () => {
 
           <div className="flex flex-col md:flex-row items-start mt-6">
             <div className="w-full md:w-1/2 lg:w-[500px] lg:h-[500px] h-auto object-cover rounded mb-6 md:mb-0">
-              <Slider {...settings}>
-                {product.image.map((imgSrc, index) => (
-                  <div key={index}>
+              <div>
                     <img
                       src={suctionHose}
-                      alt={`${product.ProductName} ${index + 1}`}
                       className="w-full h-[200px] object-contain"
                     />
                   </div>
-                ))}
-              </Slider>
+                
               <h1 className="text-2xl font-bold text-orange-600 mt-4 text-center">
                 Suction Hose
               </h1>
@@ -220,17 +216,14 @@ const SinkBasinPipes = () => {
           </div>
           <div className="flex flex-col md:flex-row items-start mt-6">
             <div className="w-full md:w-1/2 lg:w-[500px] lg:h-[500px] h-auto object-cover rounded mb-6 md:mb-0">
-              <Slider {...settings}>
-                {product.image.map((imgSrc, index) => (
-                  <div key={index}>
+              <div>
                     <img
                       src={coloBraidede}
-                      alt={`${product.ProductName} ${index + 1}`}
+                      
                       className="w-full h-[200px] object-contain"
                     />
                   </div>
-                ))}
-              </Slider>
+                
               <h1 className="text-2xl font-bold text-orange-600 mt-4 text-center">
                 Braided Hose
               </h1>
@@ -313,17 +306,15 @@ const SinkBasinPipes = () => {
           </div>
           <div className="flex flex-col md:flex-row items-start mt-6">
             <div className="w-full md:w-1/2 lg:w-[500px] lg:h-[500px] h-auto object-cover rounded mb-6 md:mb-0">
-              <Slider {...settings}>
-                {product.image.map((imgSrc, index) => (
-                  <div key={index}>
+              
+                  <div >
                     <img
-                      src={gardenTubing}
-                      alt={`${product.ProductName} ${index + 1}`}
+                      src={gardentTubing}
+                      
                       className="w-full h-[200px] object-contain"
                     />
                   </div>
-                ))}
-              </Slider>
+               
               <h1 className="text-2xl font-bold text-orange-600 mt-4 text-center">
                 Tubing Hose
               </h1>

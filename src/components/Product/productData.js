@@ -350,7 +350,7 @@ const productsData = [
       {
         product: {
           ProductName: "Sink/Basin Pipes",
-          image: [sinkPipes,sinkPipes2,sinkPipes3,sinkPipes4],
+          image: [sinkPipes,sinkPipes2,sinkPipes3],
           sizeWeight: [
             { s: '30"', w: "28" },
             {withCup: '30"'}
