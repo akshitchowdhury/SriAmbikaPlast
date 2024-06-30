@@ -74,7 +74,8 @@ const WhiteTransparent = () => {
               </div>
               <div className="mt-8">
                 <h2 className="text-xl font-bold text-green-600 mb-4">
-                  ROLL LENGTH: {product.rollLength}
+                  {/* ROLL LENGTH: {product.rollLength} */}
+                  ROLL LENGTH: above 60mtr- below 100mtr
                 </h2>
                 <h3 className="text-lg font-semibold text-gray-800 mb-2">
                   Product Quality:
