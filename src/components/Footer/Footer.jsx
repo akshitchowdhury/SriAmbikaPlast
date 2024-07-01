@@ -1,14 +1,16 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
-import { faFacebook, faInstagram, faLinkedin, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { faFacebook, faInstagram, faLinkedin, faWhatsapp, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { generateLink } from "@reslear/whatsapp-link";
+import Whatsapp from "../Product/Whatsapp"
 import QuickLinks from "./QuickLinks";
 import WhatWeDo from "./WhatWeDo";
 import ImportantLinks from "./ImportantLinks";
 import AdressBlock from "./AdressBlock";
 import "./Footer.css";
 import footerLogo from "../../assets/logo2.png"
+import WhatsApp from "../Product/Whatsapp";
 const Footer = () => {
   const handleClick = () => {
     const url = generateLink({ phone: 9448539183, message: "Welcome to Shri Ambika Plast...Feel free to connect with us" });
@@ -59,11 +61,12 @@ const Footer = () => {
           © 2024 <a href="https://flowbite.com/" className="hover:underline">Shri Ambika Plast</a>. All Rights Reserved.
         </span>
         <div className="flex mt-4 md:mt-0 space-x-6 justify-center md:justify-start">
-          <a href="https://www.instagram.com/Shriambikaplast/" className="text-gray-800 hover:text-gray-900"><FontAwesomeIcon icon={faInstagram} size="lg" /></a>
-          <a href="https://www.linkedin.com/in/Shriambikaplast/" className="text-gray-800 hover:text-gray-900"><FontAwesomeIcon icon={faLinkedin} size="lg" /></a>
-          <a href="mailto:seraramsolanki@gmail.com" className="text-gray-800 hover:text-gray-900"><FontAwesomeIcon icon={faEnvelope} size="lg" /></a>
-          <a href="tel:+919448539183" className="text-gray-800 hover:text-gray-900"><FontAwesomeIcon icon={faPhone} size="lg" /></a>
-          <button onClick={handleClick} className="text-gray-800 hover:text-gray-900"><FontAwesomeIcon icon={faWhatsapp} size="lg" /></button>
+          <a href="https://www.instagram.com/seraramsolanki?utm_source=qr&igsh=ZGxpbjB4MWZrMW01" target="_blank" className="text-pink-800 hover:text-gray-900"><FontAwesomeIcon icon={faInstagram} size="lg" /></a>
+          <a href="https://www.facebook.com/shri.ambika.plast?mibextid=ZbWKwL" target="_blank" className="text-indigo-800 hover:text-gray-900"><FontAwesomeIcon icon={faFacebook} size="lg" /></a>
+          <a href="https://youtube.com/@seraramsolanki2120?si=ArOF6xGSd09UhhR2" target="_blank" className="text-red-800 hover:text-gray-900"><FontAwesomeIcon icon={faYoutube} size="lg" /></a>
+          <a href="mailto:seraramsolanki@gmail.com" target="_blank" className="text-gray-800 hover:text-gray-900"><FontAwesomeIcon icon={faEnvelope} size="lg" /></a>
+          <a href="tel:+919448539183" target="_blank" className="text-blue-800 hover:text-gray-900"><FontAwesomeIcon icon={faPhone} size="lg" /></a>
+           <WhatsApp/>
         </div>
       </div>
     </footer>
