@@ -16,17 +16,16 @@ const ContactForm = () => {
     e.preventDefault();
     const serviceId = "service_5culi7g";
     const templateId = "template_zfcjvhu";
-    const templateParams = {
-      name: nameRef.current.value,
-      recipient: emailRef.current.value,
-      message: messageRef.current.value,
-      phone: phoneRef.current.value, 
-      email: emailRef.current.value
-    };
     try {
       setLoading(true);
-      await emailjs.send(serviceId, templateId, templateParams);
-      alert("Email successfully sent. Please check your inbox.\n\nName: " + nameRef.current.value + "\nEmail: " + emailRef.current.value + "\nMessage: " + messageRef.current.value + "\nPhone: " + phoneRef.current.value);
+      await emailjs.send(serviceId, templateId, {
+        name: nameRef.current.value,
+        recipient: emailRef.current.value,
+        message: messageRef.current.value,
+        phone: phoneRef.current.value, // Include phone number in the email template
+        email: emailRef.current.value // Include phone number in the email template
+      });
+      alert("Email successfully sent. Please check your inbox.\n\nName: " + nameRef.current.value + "\nEmail: " + emailRef.current.value + "\nMessage: " + messageRef.current.value + "\nPhone: " + phoneRef.current.value); // Display name, email, message, and phone number in the success message
     } catch (error) {
       console.error("Error sending email:", error);
     } finally {
@@ -71,7 +70,7 @@ const ContactForm = () => {
               type="number"
               id="phone"
               ref={phoneRef}
-              className="mt-1 block w-full px-4 py-2 text-white border border-transparent rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none"
+              className="mt-1 block w-full px-4 py-2 text-black border border-transparent rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none"
               placeholder="Your Phone"
             />
           </div>
@@ -84,7 +83,7 @@ const ContactForm = () => {
             id="message"
             rows="4"
             ref={messageRef}
-            className="mt-1 block w-full px-4 py-2 text-white border border-transparent rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none"
+            className="mt-1 block w-full px-4 py-2 text-black border border-transparent rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none"
             placeholder="Your Message"
           ></textarea>
         </div>

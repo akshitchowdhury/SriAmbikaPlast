@@ -16,16 +16,15 @@ const HomeContact = forwardRef((props, ref) => {
     e.preventDefault();
     const serviceId = "service_5culi7g";
     const templateId = "template_zfcjvhu";
-    const templateParams = {
-      name: nameRef.current.value,
-      recipient: emailRef.current.value,
-      message: messageRef.current.value,
-      phone: phoneRef.current.value, // Include phone number in the email template
-      email: emailRef.current.value // Include email in the email template
-    };
     try {
       setLoading(true);
-      await emailjs.send(serviceId, templateId, templateParams);
+      await emailjs.send(serviceId, templateId, {
+        name: nameRef.current.value,
+        recipient: emailRef.current.value,
+        message: messageRef.current.value,
+        phone: phoneRef.current.value, // Include phone number in the email template
+        email: emailRef.current.value // Include phone number in the email template
+      });
       alert("Email successfully sent. Please check your inbox.\n\nName: " + nameRef.current.value + "\nEmail: " + emailRef.current.value + "\nMessage: " + messageRef.current.value + "\nPhone: " + phoneRef.current.value); // Display name, email, message, and phone number in the success message
     } catch (error) {
       console.error("Error sending email:", error);
