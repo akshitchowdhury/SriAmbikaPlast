@@ -35,7 +35,7 @@ const styles = {
 
 const WhatsApp = ({ phoneNumber, message }) => {
   const handleClick = () => {
-    const url = generateLink(phoneNumber= 9845511324, message="Welcome to Sri Ambika Plast...Feel free to connect with us");
+    const url = generateLink(phoneNumber= 9845511324, message="Welcome to Shri Ambika Plast...Feel free to connect with us. https://www.shriambikaplast.com/");
     window.open(url, '_blank');
   };
 

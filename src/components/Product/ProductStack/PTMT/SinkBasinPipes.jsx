@@ -59,7 +59,7 @@ const SinkBasinPipes = () => {
                     <tr className="even:bg-orange-200">
                     <td className="py-3 px-5 text-gray-700 text-center font-semibold text-lg border-r border-gray-300">
                         
-                        {product.sizeWeight.filter(item => !item.withCup).map(item => `${item.s} ${item.w}`).join(', ')}
+                        {product.sizeWeight.filter(item => !item.withCup).map(item => `${item.s} `).join(', ')}
                       </td>
                       <td className="py-3 px-5 text-gray-700 text-center font-semibold text-lg border-r border-gray-300">
                         

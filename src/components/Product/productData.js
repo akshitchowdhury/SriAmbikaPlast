@@ -371,7 +371,7 @@ const productsData = [
           ProductArrs: ["Suction Sink/Basin Pipe", "Braided Sink/Basin Pipe", "Tubing Sink/Basin Pipe"],
           image: [sinkPipes,braided,tubing],
           sizeWeight: [
-            { s: '30"', w: "28" },
+            { s: '28"-30"' },
             {withCup: '30"'}
           ],
           // colors: ["Dark Green, Dark Blue, White, Black"],
