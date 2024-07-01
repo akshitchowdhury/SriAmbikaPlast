@@ -55,7 +55,7 @@ const PtmtSinkPipes = () => {
                         Size
                       </th>
                       <th className="py-3 px-5 bg-orange-600 text-white font-bold uppercase text-lg border-b border-gray-300">
-                        Weight
+                        Inches
                       </th>
                     </tr>
                   </thead>

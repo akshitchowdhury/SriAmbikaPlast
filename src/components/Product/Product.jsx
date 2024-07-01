@@ -10,6 +10,8 @@ import ProductsAtGlance from '../Home/Products at a Glance/ProductsAtGlance';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 AOS.init();
+
+
 const ProductCard = ({ productName, image }) => {
   const productPath = productName.toLowerCase().replace(/\s+/g, '-');
   const handleClick = () => {

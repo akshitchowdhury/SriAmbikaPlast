@@ -349,12 +349,12 @@ const productsData = [
           ProductName: "PTMT Connection Pipes",
           image: [ptmtConnection,ptmtConnection1],
           sizeWeight: [
-            { s: '12"', w: "1" },
-            { s: '18"', w: "1.5" },
-            { s: '24"', w: "2" },
-            { s: '30"', w: "2.5" },
-            { s: '36"', w: "3" },
-            { s: '48"', w: "4" }
+            { s: '1.5 feet', w: '18"' },
+            { s: '2 feet', w: '24"' },
+            { s: '1 meter', w: '39"' },
+            { s: '1.50 meter', w: '59"' },
+            { s: '2 meter', w: '79"' },
+            
           ],
           // colors: ["Dark Green, Dark Blue, White, Black"],
           rollLength: "30mtr",
