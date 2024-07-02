@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faPhone, faX } from "@fortawesome/free-solid-svg-icons";
 import { faFacebook, faInstagram, faLinkedin, faTwitter, faWhatsapp, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { generateLink } from "@reslear/whatsapp-link";
 import Whatsapp from "../Product/Whatsapp"
@@ -64,7 +64,7 @@ const Footer = () => {
         <div className="flex mt-4 md:mt-0 space-x-6 justify-center md:justify-start">
           <a href="https://www.instagram.com/seraramsolanki?utm_source=qr&igsh=ZGxpbjB4MWZrMW01" target="_blank" className="text-pink-800 hover:text-gray-900"><FontAwesomeIcon icon={faInstagram} size="lg" /></a>
           <a href="https://www.facebook.com/shri.ambika.plast?mibextid=ZbWKwL" target="_blank" className="text-indigo-800 hover:text-gray-900"><FontAwesomeIcon icon={faFacebook} size="lg" /></a>
-          <a href="https://www.facebook.com/shri.ambika.plast?mibextid=ZbWKwL" target="_blank" className="text-black hover:text-gray-900"><FontAwesomeIcon icon={faTwitter} size="lg" /></a>
+          <a href="https://x.com/ShriPlast/status/1808044054023721072?t=_u6YehS3HVLRl1m67dd56g&s=09" target="_blank" className="text-black hover:text-gray-900"><FontAwesomeIcon icon={faX} size="lg" /></a>
           <a href="https://youtube.com/@seraramsolanki2120?si=ArOF6xGSd09UhhR2" target="_blank" className="text-red-800 hover:text-gray-900"><FontAwesomeIcon icon={faYoutube} size="lg" /></a>
           <a href="mailto:seraramsolanki@gmail.com" target="_blank" className="text-gray-800 hover:text-gray-900"><FontAwesomeIcon icon={faEnvelope} size="lg" /></a>
           <a href="tel:+919448539183" target="_blank" className="text-blue-800 hover:text-gray-900"><FontAwesomeIcon icon={faPhone} size="lg" /></a>
