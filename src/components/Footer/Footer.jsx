@@ -60,7 +60,7 @@ const Footer = () => {
         <span className="text-sm sm:text-center">
           © 2024 <a href="https://flowbite.com/" className="hover:underline">Shri Ambika Plast</a>. All Rights Reserved.
         </span>
-        <p>Powered by <b>INNOMATRICS TECHNOLOGIES</b></p>
+{/*         <p>Powered by <b>INNOMATRICS TECHNOLOGIES</b></p> */}
         <div className="flex mt-4 md:mt-0 space-x-6 justify-center md:justify-start">
           <a href="https://www.instagram.com/seraramsolanki?utm_source=qr&igsh=ZGxpbjB4MWZrMW01" target="_blank" className="text-pink-800 hover:text-gray-900"><FontAwesomeIcon icon={faInstagram} size="lg" /></a>
           <a href="https://www.facebook.com/shri.ambika.plast?mibextid=ZbWKwL" target="_blank" className="text-indigo-800 hover:text-gray-900"><FontAwesomeIcon icon={faFacebook} size="lg" /></a>
